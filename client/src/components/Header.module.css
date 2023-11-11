@@ -1,0 +1,15 @@
+header { 
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#969191;
+    border-radius: 0.3em;
+}
+header div.logo {
+    width: 15em;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
