@@ -1,2 +1,45 @@
 .home {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFA0A3;
+    /* max-width: 90%; */
+}
+
+.media img {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: 0 0 0 auto;
+    border: 2px solid #EAFBFF;
+    
+}
+
+.media {
+    flex: 1 0 50%; 
+    
+    align-self: center;
+    justify-self: center;
+    margin-left: 3em;
+}
+
+.heading {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border: 2px solid #EAFBFF;
+    margin: 2em 6em 2em 0.3em;
+}
+
+.heading h1{
+    max-width: 30%;
+    font-weight: bold;
+    
+}
+.heading button {
+    margin-top: 1.5em;
+    text-transform: uppercase;
+    color: rgba(95, 94, 94, 0.985);
 }
