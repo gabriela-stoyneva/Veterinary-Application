@@ -1,4 +1,4 @@
-import logo from "../assets/happy.png"
+import logo from "../../assets/happy.png"
 import style from "./Header.module.css"
 
 import Navigation from "./Navigation";
