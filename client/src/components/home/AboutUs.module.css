@@ -1,1 +1,21 @@
-import style from './'
+.aboutUs {
+    display: flex;
+    padding: 1em;
+    align-items: center;
+}
+
+.media img {
+    width: 100%;
+    height: auto;
+}
+.info {
+    text-align: center;
+    padding: 0 1em 0 0;
+}
+.info button {
+    margin-top: 1.5em;
+    text-transform: uppercase;
+}
+.info h2 {
+    margin-bottom: 0.5em;
+}
