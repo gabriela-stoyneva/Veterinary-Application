@@ -2,19 +2,22 @@
     display: flex;
     flex-wrap: wrap;
 }
+
 .articleService {
     flex: 1 1 28%;
     text-align: center;
     padding: 1em;
     margin: 1.5em;
     border-radius: 2em;
-    color: #3c6e71;
     background-color: #ecf8f8;
 }
+
 .services i {
-    font-size: 2em;
-    padding: 1em 0 0.5em 1em;
+    color: #3c6e71;
+    font-size: 2.3em;
+    padding: 0.5em 0;
 }
+
 .button {
-    text-align: center;    
-} 
+    text-align: center;
+}

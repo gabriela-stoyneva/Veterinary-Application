@@ -7,16 +7,17 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
-  color: #fffffffa;
-  background-color: #ccc9dc;
+  background-color: #c4c4c5b8;
+  color: #0c1821;
 }
 
 .root { 
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  max-width: 80em;
+  max-width: 72em;
   min-height: 100vh;
+  background-color: #e7d8c975;
   
 }
 main {
@@ -38,6 +39,7 @@ h1 {
 }
 h1, h2, h3, h4 {
   margin: 0 0 0.5em 0;
+  color: #2d5355;
 }
 
 button {
