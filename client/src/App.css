@@ -36,6 +36,9 @@ h1 {
   font-size: 3.2em;
   line-height: 1.1;
 }
+h1, h2, h3, h4 {
+  margin: 0 0 0.5em 0;
+}
 
 button {
   border-radius: 8px;
@@ -44,12 +47,16 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
+  text-transform: uppercase;
+  color: #f4f3ee;
+  background-color: #3c6e71;
+  margin-top: 1.5em;
  
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #e7e8f3;
 }
 button:focus,
 button:focus-visible {

@@ -3,7 +3,7 @@ import style from './Navigation.module.css'
 export default function Navigation() {
     return (
 
-        <nav>
+        <nav className={style.nav}>
             <ul>
                 <li>Home</li>
                 <li>About us</li>

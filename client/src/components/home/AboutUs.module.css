@@ -1,21 +1,24 @@
 .aboutUs {
     display: flex;
-    padding: 1em;
+    margin: 2em 0;
+    padding: 2em 0.5em;
     align-items: center;
+    border-top: 2px solid #ecf8f8;
+    border-bottom: 2px solid #ecf8f8;
 }
 
 .media img {
     width: 100%;
     height: auto;
 }
+
 .info {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0 1em 0 0;
 }
-.info button {
-    margin-top: 1.5em;
-    text-transform: uppercase;
-}
+
 .info h2 {
     margin-bottom: 0.5em;
 }

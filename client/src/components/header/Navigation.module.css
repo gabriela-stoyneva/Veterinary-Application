@@ -1,9 +1,9 @@
-ul {
+.nav ul {
     list-style-type: none;
     display: flex;
     gap: 2em;
     margin-right: 1em;
 }
-ul li {
+.nav ul li {
     text-transform:uppercase;
 }

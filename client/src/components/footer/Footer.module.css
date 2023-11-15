@@ -1,11 +1,11 @@
-footer {
+.footer {
     background-color: #9A8C98;
     display: flex;
     justify-content: space-between;
 }
-p {
+.footer p {
     padding: 0.5em 1em;
 }
-i {
+.footer i {
     margin-right: 1em;
 }

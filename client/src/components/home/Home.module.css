@@ -33,11 +33,7 @@
     text-align: center;
     
 }
-.heading button {
-    margin-top: 2em;
-    text-transform: uppercase;
-    color: #4A4E69;
-}
+
 .name {
     text-shadow: #e5383b 1px 0 10px;
 }
