@@ -6,3 +6,4 @@ color-palette: https://www.canva.com/colors/color-palettes/room-for-comfort/;
 favicon: https://favicon.io/;
 
 pictures: https://unsplash.com/;
+rest: https://developers.provetcloud.com/restapi/endpoints.html
