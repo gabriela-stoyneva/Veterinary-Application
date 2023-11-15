@@ -1,0 +1,21 @@
+.bottom {
+    display: flex;
+    background-color: #ecf8f8;
+
+}
+.bottom img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding:  1em;
+}
+.bottomArticle {
+    padding: 1em 0.5em 0.3em 0;
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 18%;
+}
+.bottomArticle p {
+    font-size: 0.8em;
+}

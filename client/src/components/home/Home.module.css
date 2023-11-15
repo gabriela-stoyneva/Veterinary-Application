@@ -13,6 +13,7 @@
 }
 
 .media {
+    padding: 0.5em;
     display: flex;
     flex: 1 0 60%; 
     justify-content: right;
