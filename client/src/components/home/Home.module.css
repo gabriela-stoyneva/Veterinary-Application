@@ -1,42 +1,43 @@
 .home {
     display: flex;
     background-color: #F2E9E4;
+    border-bottom: 2px solid #EAFBFF;
+    border-top: 2px solid #EAFBFF;
 
 }
 
 .media img {
     display: block;
-    width: 60%;
+    width: 100%;
     height: auto;
 }
 
 .media {
     display: flex;
-    flex: 0 0 60%; 
+    flex: 1 0 60%; 
     justify-content: right;
 }
 
 .heading {
-    background-color: #db7f8e;
+    background-color: #ca6a688b;
     padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    border: 2px solid #EAFBFF;
-    margin-right: 10em;
 }
 
 .heading h1{
-    max-width: 30%;
+    max-width: 33%;
     font-weight: bold;
-    text-align: center;
-    
+    text-align: center;   
 }
 
 .name {
     text-shadow: #e5383b 1px 0 10px;
+    font-size: 1.2em;
 }
 .name:hover {
     text-shadow: #e5383b 1px 0 30px;
+    
 }
