@@ -4,6 +4,8 @@ import './App.css'
 import Header from './components/header/Header'
 import Footer from './components/footer/Footer'
 import Home from './components/home/Home'
+import LoginForm from './components/clients/LoginForm'
+import RegisterForm from './components/clients/RegisterForm'
 
 
 function App() {
@@ -13,7 +15,8 @@ function App() {
         <Header />
         <main>
         <Home />
-
+          <LoginForm />
+          <RegisterForm />
         </main>
         
         <Footer />

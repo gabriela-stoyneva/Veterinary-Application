@@ -1,0 +1,17 @@
+.login, .register{
+    margin: 0 auto;
+    padding: 4em 2em;
+    max-width: 40em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    text-transform: uppercase;
+    border: 3px solid whitesmoke;
+    border-radius: 2em;
+}
+.login div, .register div{
+    display: flex;
+    flex-direction: column;
+    
+}
