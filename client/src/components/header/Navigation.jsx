@@ -10,9 +10,13 @@ export default function Navigation() {
                 <li> <Link to="/">Home</Link> </li>
                 <li>About us</li>
                 <li>Services</li>
-                <li>Clients</li>
-                <li><Link to="/login">Login</Link></li>
-                <li><Link to="/register">Register</Link> </li>
+                <li className={style.dropdown}> Clients
+                    <ul className={style['dropdownMenu']} >
+                        <li><Link to="/login">Login</Link></li>
+                        <li><Link to="/register">Register</Link> </li>
+                    </ul>
+                </li>
+
                 <li>What's new</li>
                 <li>Contact us</li>
             </ul>
