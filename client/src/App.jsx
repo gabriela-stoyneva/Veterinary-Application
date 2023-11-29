@@ -7,6 +7,7 @@ import Footer from './components/footer/Footer'
 import Home from './components/home/Home'
 import LoginForm from './components/clients/LoginForm'
 import RegisterForm from './components/clients/RegisterForm'
+import ContactUsForm from './components/contact-us/ContactUsForm';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<LoginForm />} />
           <Route path="/register" element={<RegisterForm />} />
+          <Route path="/contact-us" element={<ContactUsForm />} />
         </Routes>
       </main>
 

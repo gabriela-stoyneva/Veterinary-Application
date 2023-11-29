@@ -10,11 +10,11 @@ export default function Navigation() {
 
         <nav className={style.nav}>
             <ul>
-                <li> <Link to="/">Home</Link> </li>
+                <li> <Link to="/">Home</Link></li>
                 <li>About us</li>
                 <li>Services</li>
                 <li>What's new</li>
-                <li>Contact us</li>
+                <li> <Link to="/contact-us">Contact us</Link></li>
                 <span> <Dropdown>
                         <Dropdown.Toggle variant="secondary" id="dropdown-basic" className={style.dropdown}>
                             Clients
