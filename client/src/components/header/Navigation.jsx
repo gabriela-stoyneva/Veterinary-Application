@@ -1,17 +1,21 @@
 import { Link } from 'react-router-dom';
 import Dropdown from 'react-bootstrap/Dropdown';
-import DropdownButton from 'react-bootstrap/DropdownButton';
-import Nav from 'react-bootstrap/Nav';
+
+
 
 import style from './Navigation.module.css'
+import Path from '../../lib/paths'
+
+
 
 export default function Navigation() {
+
     return (
 
         <nav className={style.nav}>
             <ul>
-                <li className={style.stateless}> <Link to="/">Home</Link></li>
-                <li className={style.stateless}> <Link to="/services"></Link> Services</li>
+                <li className={style.stateless}> <Link to={Path.Home}>Home</Link></li>
+                <li className={style.stateless}> <Link to={Path.Services}></Link> Services</li>
                 <li>
                     <span>
                         <Dropdown>
@@ -19,10 +23,10 @@ export default function Navigation() {
                                 About Us
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="/hospital" >OUR HOSPITAL</Dropdown.Item>
-                                <Dropdown.Item href="/doctors">OUR DOCTORS</Dropdown.Item>
-                                <Dropdown.Item href="/team">OUR TEAM</Dropdown.Item>
-                                <Dropdown.Item href="/news">WHAT'S NEW</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Hospital} >OUR HOSPITAL</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Doctors}>OUR DOCTORS</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Team}>OUR TEAM</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.News}>WHAT'S NEW</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </span>
@@ -34,8 +38,9 @@ export default function Navigation() {
                                 CONTACT US
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="/contact-us">CONTACT US</Dropdown.Item>
-                                <Dropdown.Item href="/questions">COMMONLY ASKED QUESTIONS</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Appointment}>APPOINTMENT</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.ContactUs}>CONTACT US</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Questions}>COMMONLY ASKED QUESTIONS</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </span>
@@ -48,14 +53,14 @@ export default function Navigation() {
                                 Adopt
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="/find">FIND PET</Dropdown.Item>
-                                <Dropdown.Item href="/add">ADD ANIMAL IN NEED</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Find}>FIND PET</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Add}>ADD ANIMAL IN NEED</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </span>
                 </li>
 
-               
+
                 <li>
                     <span>
                         <Dropdown>
@@ -63,9 +68,9 @@ export default function Navigation() {
                                 Clients
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="/login" >LOGIN</Dropdown.Item>
-                                <Dropdown.Item href="/register">REGISTER</Dropdown.Item>
-                                <Dropdown.Item href="/logout">LOGOUT</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Login}>LOGIN</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Register}>REGISTER</Dropdown.Item>
+                                <Dropdown.Item as={Link} to={Path.Logout}>LOGOUT</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </span>
