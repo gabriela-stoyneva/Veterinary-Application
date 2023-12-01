@@ -14,6 +14,7 @@ import Hospital from './components/about/Hospital';
 import Doctors from './components/about/Doctors';
 import Team from './components/about/Team';
 import BottomMenu from './components/home/BottomMenu';
+import Services from './components/home/Services';
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path={Path.Hospital} element={<Hospital />} />
           <Route path={Path.Doctors} element={<Doctors /> } />
           <Route path={Path.Team} element={<Team /> } />
+          <Route path={Path.Services} element={<Services />} />
           
         </Routes>
       </main>

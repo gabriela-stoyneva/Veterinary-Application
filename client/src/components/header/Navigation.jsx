@@ -15,7 +15,7 @@ export default function Navigation() {
         <nav className={style.nav}>
             <ul>
                 <li className={style.stateless}> <Link to={Path.Home}>Home</Link></li>
-                <li className={style.stateless}> <Link to={Path.Services}></Link> Services</li>
+                <li className={style.stateless}> <Link to={Path.Services}>Services</Link></li>
                 <li>
                     <span>
                         <Dropdown>

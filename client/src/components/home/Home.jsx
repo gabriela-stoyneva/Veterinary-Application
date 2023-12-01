@@ -2,6 +2,7 @@ import style from './Home.module.css';
 import kitten from '../../assets/pictures/kittenSmaller.jpg';
 import Services from './Services';
 import AboutUs from './AboutUs';
+import ServiceItem from './ServiceItem';
 
 
 
@@ -21,7 +22,13 @@ export default function Home() {
                 </div>
 
             </div>
-            <Services />
+            <div>
+                 <ServiceItem  /> 
+            </div>
+            {/* <Services /> */}
+            <div className={style.button}>
+                <button>View all services</button>
+            </div>
             <AboutUs />
            
         </>

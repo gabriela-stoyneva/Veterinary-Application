@@ -1,6 +1,6 @@
 .services {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .articleService {
@@ -10,14 +10,30 @@
     margin: 1.5em;
     border-radius: 2em;
     background-color: #ecf8f8;
+    display: flex;
+    
+}
+.media {
+    flex: 1 0 40%;
+}
+.media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 40%;
+    padding: 1em;
+}
+.services i{
+    margin: 0.5em;
+    color:  #2d5355;
+    font-size: 4em;
+    
 }
 
-.services i {
-    color: #3c6e71;
-    font-size: 2.3em;
-    padding: 0.5em 0;
-}
 
-.button {
-    text-align: center;
-}

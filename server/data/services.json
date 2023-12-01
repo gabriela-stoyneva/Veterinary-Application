@@ -1,98 +1,98 @@
 {
     "5a3dcc05-dd0c-4d5b-96d6-6164161ac714": {
-       "imageUrl": "https://images.unsplash.com/photo-1568572933382-74d440642117?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nc3xlbnwwfHwwfHx8MA%3D%3D",
-        "iconUrl": "https://fontawesome.com/icons/shield-dog?f=classic&s=solid",
+       "imageUrl": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGRvZ3N8ZW58MHx8MHx8fDA%3D",
+        "iconUrl": "fa-solid fa-shield-dog",
         "service": "Preventative Care/Wellness",
         "text": "At Happy Pet's Hospital, our approach to veterinary care is to promote excellent overall wellness and prevent illness. Our goal is to address issues before they become a significant problem. To accomplish this, we recommend regular wellness and preventive care, which includes: Annual Exams: Our veterinarian will assess your pet’s physical health from nose to tail and perform a diagnostic work-up, which can also include blood, fecal, and urine screenings.Routine Dental Care: Dental disease is the number one diagnosed health problem in dogs and cats across America. We will closely monitor your pet’s oral health, and give you the information and tools to provide preventative dental care.Parasite Prevention: Parasites can cause significant disease in your pet, and potentially death. All pets are at risk for fleas, ticks, heartworm, and intestinal parasites, which can also be transmitted to your human family. Regular screening is a must, and we offer many options for parasite prevention.",
         "_id": "5a3dcc05-dd0c-4d5b-96d6-6164161ac714"
     },
     "a6d0297a-097a-4246-9565-0ddc3a00bc7b": {
         "imageUrl": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGNhdHN8ZW58MHx8MHx8fDA%3D",
-        "iconUrl": "https://fontawesome.com/icons/house-medical?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-house-medical",
         "service": "EMERGENCY MEDICINE & URGENT CARE",
         "text": "Health problems, injuries, and illnesses can happen at any time, and may need immediate attention. Please don’t hesitate to call or come in! When your pet urgently needs to see a veterinarian, La Verne Animal Hospital offers quality emergency and urgent care.Urgent care—Our staff will work with you to have your pet seen as soon as possible. If your pet needs emergency or urgent care, please call or come in immediately. Our number is (+359) 8 99-59-40.",
         "_id": "a6d0297a-097a-4246-9565-0ddc3a00bc7b"
     },
     "cc722746-cb52-4ab9-b894-3ebb533ddcc9": {
         "imageUrl": "https://images.unsplash.com/photo-1522444195799-478538b28823?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0cyUyMGFuZCUyMGhvbWV8ZW58MHx8MHx8fDA%3D",
-        "iconUrl": "https://fontawesome.com/icons/prescription?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-prescription",
         "service": "IN-HOUSE DIAGNOSTICS",
         "text": "When your pet is not feeling well, one of the first things a veterinarian will recommend is lab testing. La Verne Animal hospital has an in-house laboratory, and most screenings can be done on-site, saving time and money.In most cases, results can be obtained within 30 minutes for routine testing such as: Full blood work: chemistry, CBC, heartworm test, feline Leukemia, FIV tests, specific pancreatic and kidney testing, radiographs, and glucose monitoring for diabetes. Fecal screening: parvovirus, intestinal parasites, and bacterial infections. Urine testing. Cytology – microscopic examination of samples collected from skin or ear infections, growths or tumors, or fluid collected.Have questions about lab testing or need to schedule your pet for an appointment? Just give us a call at (+359) 8 99-59-40.",
         "_id": "cc722746-cb52-4ab9-b894-3ebb533ddcc9"
     },
     "85909bc4-1b03-45fd-8a11-2bafe2c0c884": {
         "imageUrl": "https://images.unsplash.com/photo-1534526238597-9187ddf131d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nJTIwdGVldGh8ZW58MHx8MHx8fDA%3D",
-        "iconUrl": "https://fontawesome.com/icons/tooth?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-tooth",
         "service": "DENTISTRY",
         "text": "Do you know the number one disease affecting cats and dogs today? If you guessed dental disease, you are right! According to the American Veterinary Dental College, most dogs and cats have some evidence of periodontal (dental) disease by the age of 3, and it often goes untreated. In late stages, bacteria can enter your dog or cat’s bloodstream and may cause severe problems for the heart and other vital organs. At La Verne Animal Hospital, we understand that dental disease is a preventable issue. We strive to provide you with the at-home tools and in-clinic treatment to maintain good oral health and prevent dental disease. In addition to regular dental exams, we offer: Anesthetic cleaning and polishing. Non anesthetic dental cleanings. Digital dental X-rays to see below the gumline where most dental disease is present. Extractions when necessary. Oral surgery.",
         "_id": "85909bc4-1b03-45fd-8a11-2bafe2c0c884"
     },
     "e0cbfb1c-eaf5-4b8a-800e-cb190df015a1": {
         "imageUrl": "https://images.unsplash.com/photo-1504826260979-242151ee45b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRvZyUyMG1pY3JvfGVufDB8fDB8fHww",
-        "iconUrl": "https://fontawesome.com/icons/microchip?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-microchip",
         "service": "MICROCHIPPING",
         "text": "We encourage all pet owners to microchip their animal companions. The sad fact is that only 17% of dogs and 2% of cats make it back to their owners when they become lost. Microchipping significantly increases the chances that your pet will be returned to you. Microchipping a pet is simple, relatively painless, and very affordable. Unlike collars and tags, microchips can’t fall off, and serve as permanent identification for a pet’s entire life.",
         "_id": "e0cbfb1c-eaf5-4b8a-800e-cb190df015a1"
     },
     "c95462de-6ed9-49fb-bbbe-98ec838a9972": {
         "imageUrl": "https://plus.unsplash.com/premium_photo-1663011296454-e68f12e316e3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZG9nJTIwdmV0fGVufDB8fDB8fHww",
-        "iconUrl": "https://fontawesome.com/icons/user-nurse?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-user-nurse",
         "service": "SURGERY",
         "text": "Our hospital provides a full range of surgical services, from standard spaying and neutering to advanced, highly specialized procedures. Surgery specialties: Spay and Neuter, Mass/tumor resection, Exploratory surgery, Oral surgery, Cystotomy, Dew claw removal, Hernia repair, Animal attack/wound repair, Abscess drainage/repair, Aural hematoma repair, Entropion/eyelid repair. We understand that surgery is a stressful time for any owner, and we are available every step of the way to answer questions and put your mind at ease. If you are considering veterinary surgery for your pet, please contact your Happi Pet's Hospital veterinarian to schedule an introductory consultation.",
         "_id": "c95462de-6ed9-49fb-bbbe-98ec838a9972"
     },
     "1d30ebc6-9ebd-46a0-92bd-fa484b43bb16": {
         "imageUrl": "https://images.unsplash.com/photo-1489440543286-a69330151c0b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZyUyMHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
-        "iconUrl": "https://fontawesome.com/icons/certificate?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-certificate",
         "service": "HEALTH CERTIFICATES",
         "text": "If you plan to travel with your pet to another state or country, he or she may need a certificate of veterinary inspection. We can provide a health certificate that ensures your pet has met specific health criteria. Health certificates for domestic interstate and international travel have stringent rules veterinarians cannot bend. When you contact us about providing a health certificate, be sure to provide the following information: The type of animal that will be traveling. The country of destination, The date of departure from the Bulgaria. Whether your pet will be traveling alone, as cargo, or with a person in the cabin of the plane",
         "_id": "1d30ebc6-9ebd-46a0-92bd-fa484b43bb16"
     },
     "30cb623c-4410-4f6b-8c3b-b41577b6cd41": {
         "imageUrl": "https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2F0JTIwaW11bmV8ZW58MHx8MHx8fDA%3D",
-        "iconUrl": "https://fontawesome.com/icons/syringe?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-syringe",
         "service": "VACCINATIONS",
         "text": "Vaccinating your pet is a relatively inexpensive but essential way to protect their health. In addition to preventing many life-threatening illnesses, vaccinations can prevent diseases prevalent in wildlife and those that can be passed to humans. It’s essential to administer vaccinations when pets are puppies and kittens because their young immune systems are still developing and need protection to stay healthy. Your La Verne Veterinary Hospital veterinarian can advise you which vaccinations are required or recommended for your pet based on age, health, and lifestyle.",
         "_id": "30cb623c-4410-4f6b-8c3b-b41577b6cd41"
     },
     "0eb4a64c-3a74-4db6-8841-3e726d14427c": {
         "imageUrl": "https://images.unsplash.com/photo-1558237316-d4762d4b8ce7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8b2xkJTIwZG9nfGVufDB8fDB8fHww",
-        "iconUrl": "https://fontawesome.com/icons/heart-circle-bolt?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-heart-circle-bolt",
         "service": "PALLIATIVE CARE",
         "text": "It’s never easy to say goodbye to a beloved pet, and we want to help make that difficult time more manageable by providing compassionate hospice and euthanasia services for your pet. We provide a quiet “comfort room” at the hospital where you can be with your animal companion through the process and when they pass, and we will give you the space and time you need to say goodbye. Hospice care for pets means providing treatments, medications, and therapies to see that your pet’s pain is managed. We will work with you at our clinic to ensure that he or she is as comfortable as possible in the weeks or days prior to passing. When you’re ready to make that decision, our veterinarians will be with you every step of the way, and our staff can help with recommendations for aftercare. We know it won’t be an easy call to make, but please don’t hesitate to reach out to us if we can assist you with end-of-life care for your pet.",
         "_id": "0eb4a64c-3a74-4db6-8841-3e726d14427c"
     },
     "1accde4d-92b9-4694-8378-ef6eeab5e471": {
         "imageUrl": "https://images.unsplash.com/photo-1553688738-a278b9f063e0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmV0ZXJpbmFyeSUyMGNsaW5pY3xlbnwwfHwwfHx8MA%3D%3D",
-        "iconUrl": "https://fontawesome.com/icons/hospital?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-hospital",
         "service": "DAY HOSPITALIZATION",
         "text": "Should your pet need it, we provide care throughout the day to ensure your furry friends are on the road to recovery. This includes dog walking, feeding, cleaning, monitoring health status, and administering medications. There is no overnight care provided with day hospitalization.",
         "_id": "1accde4d-92b9-4694-8378-ef6eeab5e471"
     },
     "48f5606b-2869-4584-9cd2-120caa2fc652": {
         "imageUrl": "https://images.unsplash.com/photo-1561746983-048613b68aa3?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmxlYXN8ZW58MHx8MHx8fDA%3D",
-        "iconUrl": "https://fontawesome.com/icons/bug-slash?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-bug-slash",
         "service": "PARASITE PREVENTION",
         "text": "Fleas, ticks, worms, and mosquitoes: OH MY! It’s important you protect your pet from these pests and the problems they can cause for both animal and human family members: Fleas – can trigger dermatitis, tapeworm, hot spots and infest a home. Intestinal worms – cause illness and can also infect humans. Ticks – can transmit numerous dangerous illnesses to both pets and people, including Lyme disease. Mosquitoes – carry potentially deadly heartworm, which is on the rise nationwide. In addition to preventive medications, you should thoroughly check your pets for fleas and ticks if they’ve been outdoors. At Happy Pet's Hospital, we believe prevention is always the best treatment! We carry many different types of flea, tick, and heartworm preventive, and many of them also prevent some intestinal worms. Our veterinarians can help you choose which one is right for your pet",
         "_id": "48f5606b-2869-4584-9cd2-120caa2fc652"
     },
     "77f95e55-0e9a-47ab-a222-4b2d415aebbe": {
         "imageUrl": "https://images.unsplash.com/photo-1532622982-3f99bc6adb52?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZG9nJTIwc2NyYXRjaHxlbnwwfHwwfHx8MA%3D%3D",
-        "iconUrl": "https://fontawesome.com/icons/capsules?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-capsules",
         "service": "ALLERGIES",
         "text": "The chewing. The scratching. The licking. These behaviors are all too familiar to many pet parents, and they can be symptoms of a significant health problem. It could be food or environmental allergies, an infection, stress, or any one of many issues, and it’s important your pet see the vet when these symptoms start to happen. Symptoms of Skin Problems in Cats & Dogs: Excessive scratching, chewing, or licking, Rashes, Lesions, Irritated or dry skin, Scabs, Red or inflamed skin, Hair loss, Rubbing of face against furniture or carpets.",
         "_id": "77f95e55-0e9a-47ab-a222-4b2d415aebbe"
     },
     "c2c44566-e7e0-4c09-9531-f8d166955505": {
         "imageUrl": "https://images.unsplash.com/photo-1544378382-5ea6d7768876?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGRvZyUyMHNjcmF0Y2h8ZW58MHx8MHx8fDA%3D",
-        "iconUrl": "https://fontawesome.com/icons/volume-xmark?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-volume-xmark",
         "service": "EAR TREATMENT",
         "text": "Is your pet scratching at his ears or shaking his head a lot more these days? He may have an ear infection, one of the most frequently diagnosed medical conditions in pets—especially dogs with floppy ears. Signs of an ear infection can include scratching at the ears, head shaking, ears that are red and/or painful to the touch, an unpleasant smell or a dirty discharge inside the ear. Here are four facts about ear infections: Left untreated, an ear infection won’t get better by itself.  It can lead to permanent changes such as narrowing of and scar tissue build-up in the ear canal.  This can predispose Fido or Fluffy to repeated infections and recurring pain. Other serious problems including hematomas (a solid swelling of clotted blood within the ear flap) or middle ear infections can also occur. Not all ear infections are alike.  Otitis externa can be caused by harmful bacteria, fungi, or ear mites.  Depending on the ear swab results, our doctors will prescribe medication that includes one or more ingredients, including an antibiotic (to kill bacteria), antifungal (to kill fungi), acaricide (to kill ear mites), and an anti-inflammatory to reduce pain and inflammation.  Since there are many possible causes, using a medication prescribed for a previous ear infection may not be effective. Regular ear cleaning can be just as important as administering medication.  Our veterinarians will often recommend you use a cleaning solution to remove excess wax and debris from the ear canal before medicating.  Without proper cleaning, it’s sometimes impossible for the ear medication to penetrate the ear canal and do its job. Recheck exams are vital to resolving ear infections. At the end of treatment, it’s very important that your four-legged friend return (often 7-10 days after the initial diagnosis) so one of our doctors can recheck the ears.  Because many ear medications include an anti-inflammatory drug that reduces redness, swelling, and soreness, you may decide the infection has been resolved. Unfortunately, some cases may require a longer course of treatment for a complete cure and, without a recheck, you won’t know if the source of infection has been removed. To prevent an ear infection from returning, we recommend you follow all medication and/or cleansing solution instructions, make a recheck appointment, regularly check your pet’s ears, and use a cleansing solution once weekly to remove any debris. Repeated ear infections may indicate further medical diagnostics to determine if there are one or more underlying causes, including inhalant or food allergies, hypothyroidism, or Cushing’s Disease.",
         "_id": "c2c44566-e7e0-4c09-9531-f8d166955505"
     },
     "e85a44ee-33db-4c04-9f77-cfbc56f26988": {
         "imageUrl": "https://images.unsplash.com/photo-1481241857164-e8483bce922d?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "iconUrl": "https://fontawesome.com/icons/shield-cat?f=classic&s=solid",
+        "iconUrl": "fa-solid fa-shield-cat",
         "service": "COLD LASER THERAPY",
         "text": "Cold Laser Therapy. This FDA-approved, non-invasive treatment is a game-changer for pets suffering from a variety of conditions. Cold Laser Therapy: A Safe and Effective Solution. Cold Laser Therapy uses specific wavelengths of light to stimulate cellular activity. This process helps reduce inflammation, decrease pain, and speed up the healing process without any side effects or risks to your pet. Conditions Treated by Cold Laser Therapy. Our state-of-the-art cold laser is designed to treat numerous conditions, including: Arthritis, Wound healing, Lameness, ligament, or muscle injuries, Lick granulomas, Stomatitis, Ear infections, Skin infections. While most joint or pain-related injuries benefit more from a series of treatments, Cold Laser Therapy can be applied as a single session or as part of a comprehensive treatment plan. We understand that every pet’s needs are unique, which is why we offer flexible treatment options. You can choose a single round of laser therapy or take advantage of our bundled package with six sessions for optimal results. We will work with you to determine the best course of action for your pet’s specific condition.Experience the Difference. Discover the benefits of Cold Laser Therapy for your pet at La Verne Animal Hospital. Our experienced team is committed to providing the highest quality care and helping your furry friend live a happy, healthy life. Schedule an appointment today to discuss if Cold Laser Therapy is the right option for your pet!",
         "_id": "e85a44ee-33db-4c04-9f77-cfbc56f26988"
