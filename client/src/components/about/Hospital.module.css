@@ -1,0 +1,17 @@
+.hospital {
+    padding: 3em;
+}
+
+.media img{
+    display: block;
+    width: 100%;
+    height: auto;
+
+}
+.hospital h3, .hospital h6 {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+.hospital p {
+    padding: 0 2em;
+}
