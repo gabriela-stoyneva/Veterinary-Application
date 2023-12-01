@@ -1,0 +1,31 @@
+.team {
+    padding: 3em;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team h3{
+    text-align: center;
+    padding-bottom: 2em;
+}
+.container p {
+    /* max-width: 30%; */
+    flex-grow: 0;
+    flex-basis: 40%;
+    padding: 0 1em;
+}
+.container .media {
+   
+    flex-grow: 2;
+    flex-basis: 60%;
+    
+}
+.media img {
+    display: block;
+    width: 80%;
+    height: auto;
+    padding: 1em;
+    margin: 0 auto;
+}

@@ -11,6 +11,8 @@ import LoginForm from './components/clients/LoginForm';
 import RegisterForm from './components/clients/RegisterForm';
 import ContactUsForm from './components/contact-us/ContactUsForm';
 import Hospital from './components/about/Hospital';
+import Doctors from './components/about/Doctors';
+import Team from './components/about/Team';
 
 
 function App() {
@@ -26,6 +28,8 @@ function App() {
           <Route path={Path.Register} element={<RegisterForm />} />
           <Route path={Path.ContactUs} element={<ContactUsForm />} />
           <Route path={Path.Hospital} element={<Hospital />} />
+          <Route path={Path.Doctors} element={<Doctors /> } />
+          <Route path={Path.Team} element={<Team /> } />
           
         </Routes>
       </main>
