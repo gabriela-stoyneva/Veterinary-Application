@@ -14,6 +14,7 @@ import Path from '../../lib/paths';
 
 
 export default function Home() {
+    // todo: useContext
     const [services, setServices] = useState([]);
 
     useEffect(() => {
@@ -43,7 +44,7 @@ export default function Home() {
                 <h2>Services</h2>
 
                 <section className={style.slicedService}>
-
+                    
                     {slicedArr.map((service) => (
                         <ServiceItem
                             key={service._id}
