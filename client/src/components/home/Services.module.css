@@ -35,5 +35,30 @@
     font-size: 4em;
     
 }
+.slicedService {
+    display: flex;
+    flex-wrap: wrap;
+}
+.slicedService article {
+    flex: 1 1 25%;
+    display: flex;
+}
+.slicedService .media {
+    flex: 1 0 50%;
+    
+}
+
+.slicedService .info {
+    flex: 0 2 40%;
+   padding: 0;
+}
+.slicedService i{
+    margin: 0.5em;
+    color:  #2d5355;
+    font-size: 2em;
+}
+.hidden {
+    display: none;
+}
 
 

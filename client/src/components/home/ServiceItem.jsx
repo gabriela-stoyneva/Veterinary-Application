@@ -9,15 +9,17 @@ export default function ServiceItem({
 }) {
     return (
         <article className={style.articleService}>
+
             <div className={style.info}>
                 <i className={iconUrl}></i>
                 <h3>{service}</h3>
-                <p>{text}</p>
+                <p className={style.hidden}>{text}</p>
             </div>
-            
+
             <div className={style.media}>
                 <img src={imageUrl} />
             </div>
+
         </article>
 
     )
