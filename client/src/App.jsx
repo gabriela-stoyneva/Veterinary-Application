@@ -13,7 +13,6 @@ import ContactUsForm from './components/contact-us/ContactUsForm';
 import Hospital from './components/about/Hospital';
 import Doctors from './components/about/Doctors';
 import Team from './components/about/Team';
-import BottomMenu from './components/home/BottomMenu';
 import Services from './components/home/Services';
 
 
@@ -36,7 +35,7 @@ function App() {
           
         </Routes>
       </main>
-      <BottomMenu />
+     
       <Footer />
     </div>
   )

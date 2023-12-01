@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import kitten from '../../assets/pictures/kittenSmaller.jpg';
+import Path from '../../lib/paths';
+
 import styles from './Home.module.css';
 import style from './Services.module.css';
 
-import kitten from '../../assets/pictures/kittenSmaller.jpg';
 
 import AboutUs from './AboutUs';
 import ServiceItem from './ServiceItem';
-
-import Path from '../../lib/paths';
+import BottomMenu from './BottomMenu';
 
 
 
@@ -66,7 +67,7 @@ export default function Home() {
 
 
             <AboutUs />
-
+            <BottomMenu />
         </>
 
 

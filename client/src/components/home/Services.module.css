@@ -42,6 +42,7 @@
 .slicedService article {
     flex: 1 1 25%;
     display: flex;
+    gap: 0;
 }
 .slicedService .media {
     flex: 1 0 50%;
@@ -49,7 +50,7 @@
 }
 
 .slicedService .info {
-    flex: 0 2 40%;
+    flex: 0 2 30%;
    padding: 0;
 }
 .slicedService i{
