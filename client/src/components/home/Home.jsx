@@ -1,8 +1,8 @@
-import style from './Home.module.css'
-import kitten from '../../assets/pictures/kittenSmaller.jpg'
-import Services from './Services'
-import AboutUs from './AboutUs'
-import BottomMenu from './BottomMenu'
+import style from './Home.module.css';
+import kitten from '../../assets/pictures/kittenSmaller.jpg';
+import Services from './Services';
+import AboutUs from './AboutUs';
+
 
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
             </div>
             <Services />
             <AboutUs />
-            <BottomMenu />
+           
         </>
 
 

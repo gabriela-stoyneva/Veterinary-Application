@@ -7,7 +7,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
-  background-color: #b8b6b6c2;
+  background-color: #4a4a4a;
   color: #0c1821;
 }
 
@@ -17,7 +17,7 @@ html {
   flex-direction: column;
   max-width: 72em;
   min-height: 100vh;
-  background-color: #e7d8c975;
+  background-color: #e7d8c9;
   
 }
 main {
