@@ -10,7 +10,7 @@ import style from './Services.module.css';
 
 import AboutUs from './AboutUs';
 import ServiceItem from './ServiceItem';
-import BottomMenu from './BottomMenu';
+import BottomMenu from '../footer/BottomMenu';
 
 
 
@@ -69,9 +69,8 @@ export default function Home() {
 
             </div>
 
-
             <AboutUs />
-            <BottomMenu />
+    
         </>
 
 
