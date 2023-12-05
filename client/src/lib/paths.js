@@ -12,7 +12,6 @@ const Path = {
     Hospital: "/hospital",
     Doctors: "/doctors",
     Team: "/team",
-    News: "/news",
     NotFound: "/404",
 }
 

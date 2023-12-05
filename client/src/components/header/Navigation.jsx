@@ -26,7 +26,7 @@ export default function Navigation() {
                                 <Dropdown.Item as={Link} to={Path.Hospital} >OUR HOSPITAL</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={Path.Doctors}>OUR DOCTORS</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={Path.Team}>OUR TEAM</Dropdown.Item>
-                                <Dropdown.Item as={Link} to={Path.News}>WHAT'S NEW</Dropdown.Item>
+                    
                             </Dropdown.Menu>
                         </Dropdown>
                     </span>
