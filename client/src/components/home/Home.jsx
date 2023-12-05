@@ -45,16 +45,20 @@ export default function Home() {
                 <h2>Services</h2>
 
                 <section className={style.slicedService}>
-                    
+
                     {slicedArr.map((service) => (
-                        <ServiceItem
-                            key={service._id}
-                            id={service._id}
-                            iconUrl={service.iconUrl}
-                            service={service.service}
-                            text={service.text}
-                            imageUrl={service.imageUrl}
-                        />
+                        <article key={service._id} className={style.articleService}>
+                            <ServiceItem
+
+                                id={service._id}
+                                iconUrl={service.iconUrl}
+                                service={service.service}
+                                text={service.text}
+                                imageUrl={service.imageUrl}
+                            />
+
+                        </article>
+
                     ))}
 
                 </section>

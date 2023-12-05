@@ -17,14 +17,16 @@ export default function Services() {
             <section className={style.services}>
 
                 {services.map((service) => (
-                    <ServiceItem
-                        key={service._id}
-                        id={service._id}
-                        iconUrl={service.iconUrl}
-                        service={service.service}
-                        text={service.text}
-                        imageUrl={service.imageUrl}
-                    />
+                    <article key={service._id} className={style.articleService}>
+                        <ServiceItem
+                            id={service._id}
+                            iconUrl={service.iconUrl}
+                            service={service.service}
+                            text={service.text}
+                            imageUrl={service.imageUrl}
+                        />
+                    </article>
+
                 ))}
 
             </section>

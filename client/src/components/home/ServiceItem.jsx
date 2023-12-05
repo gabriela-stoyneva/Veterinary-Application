@@ -8,8 +8,7 @@ export default function ServiceItem({
     imageUrl
 }) {
     return (
-        <article className={style.articleService}>
-
+        <>
             <div className={style.info}>
                 <i className={iconUrl}></i>
                 <h3>{service}</h3>
@@ -19,8 +18,10 @@ export default function ServiceItem({
             <div className={style.media}>
                 <img src={imageUrl} />
             </div>
+        </>
 
-        </article>
+
+
 
     )
 }
