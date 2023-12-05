@@ -34,7 +34,9 @@ export default function ContactUsForm() {
                 </div>
                 <div className={style.questionArea}>
                     <label htmlFor="question">We are here for you and your pet:</label>
-                    <textarea name="question" id="question" cols="80" rows="10"></textarea>
+                    <textarea name="question" id="question" cols="80" rows="10" placeholder='Type your question here .....'>
+                        
+                    </textarea>
                 </div>
 
                 <div className={style.buttons}>

@@ -36,7 +36,8 @@ export default function Home() {
                         Welcome to <span className={styles.name}>Happy Pets</span> Clinic!
                     </h1>
                     <button>
-                        make an appointment
+                        <Link to={Path.Appointment}>make an appointment</Link>
+                        
                     </button>
                 </div>
             </div >

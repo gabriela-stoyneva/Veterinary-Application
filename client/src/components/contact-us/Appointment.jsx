@@ -45,6 +45,9 @@ export default function Appointment() {
                         <input type="time" />
 
                     </div>
+                    <div>
+                        <textarea cols={80} rows={5} placeholder='Please, explain shortly what is your need here .....' ></textarea>
+                    </div>
 
 
                 </div>
