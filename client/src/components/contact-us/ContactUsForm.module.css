@@ -36,3 +36,18 @@
     background-color: darkslategrey;
 
 }
+.calendar {
+    padding: 0 0 2em 0;
+    display: flex;
+    gap: 2em;
+    justify-self: center;
+    align-items: center;
+    
+}
+.calendar input {
+    display: block;
+    flex: 1 1 45%;
+}
+.appointmentText {
+    padding-top: 3em;
+}

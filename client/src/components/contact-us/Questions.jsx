@@ -19,10 +19,10 @@ export default function Questions() {
             <div className={style.questions}>
 
                 <h3>Common medical concerns and frequently asked questions.</h3>
-                
+
                 <div className={style.questionArea}>
                     {questions.map((question) => (
-                        <div className={style.currentQuestion}>
+                        <div key={question._id} className={style.currentQuestion}>
                             <h5>{question.name}</h5>
                             <p>{question.answer}</p>
                         </div>

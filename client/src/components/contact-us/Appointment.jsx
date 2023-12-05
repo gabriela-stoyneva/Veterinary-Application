@@ -1,12 +1,12 @@
 import style from './ContactUsForm.module.css';
 
-export default function ContactUsForm() {
+export default function Appointment() {
     return (
         <>
 
             <form action="POST" className={style.question}>
 
-                <h2>Do you have a question? Contact us here:</h2>
+                <h2>We are here for you and your pet! Book here:</h2>
 
                 <div className={style.container}>
 
@@ -15,6 +15,8 @@ export default function ContactUsForm() {
                         <input type="text" name="ownerName" />
                         <label htmlFor="email">Email:</label>
                         <input type="email" name="email" />
+                        <label htmlFor="phoneNumber">Phone Number:</label>
+                        <input type="phoneNumber" name="phoneNumber" />
                     </div>
 
                     <div>
@@ -27,15 +29,33 @@ export default function ContactUsForm() {
                         <label htmlFor="type">Type:</label>
                         <input type="text" name="type" />
 
-                        <label htmlFor="breed">Breed:</label>
-                        <input type="text" name="breed" />
                     </div>
 
+
                 </div>
-                <div className={style.questionArea}>
+
+                <div >
+
+                    <p className={style.appointmentText}>
+                        Choose your preferred time and we will send you appointment confirmation email!
+                    </p>
+
+                    <div className={style.calendar}>
+                        <input type="date" />
+                        <input type="time" />
+
+                    </div>
+
+
+                </div>
+
+
+
+                {/* <div className={style.questionArea}>
                     <label htmlFor="question">We are here for you and your pet:</label>
                     <textarea name="question" id="question" cols="80" rows="10"></textarea>
-                </div>
+                </div> */}
+
 
                 <div className={style.buttons}>
                     <button type="button">Reset</button>
