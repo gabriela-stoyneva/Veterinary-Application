@@ -1,0 +1,15 @@
+.petList {
+    margin: 3em 0;
+}
+.container {
+    padding: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.petList h2 {
+    text-align: center;
+}
+.animalCard {
+    flex: 1 1 45%;
+}

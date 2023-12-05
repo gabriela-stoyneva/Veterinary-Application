@@ -17,6 +17,7 @@ import Services from './components/home/Services';
 import Questions from './components/contact-us/Questions';
 import Appointment from './components/contact-us/Appointment';
 import AddAnimalForm from './components/adoption/AddAnimalForm';
+import PetList from './components/adoption/PetList';
 
 
 function App() {
@@ -37,7 +38,7 @@ function App() {
           <Route path={Path.Services} element={<Services />} />
           <Route path={Path.Questions} element={<Questions />}   />
           <Route path={Path.Appointment} element={<Appointment />} />  
-          {/* <Route path={Path.Find} element={<PetLi }        */}
+          <Route path={Path.Find} element={<PetList /> }  />     
           <Route path={Path.Add} element={<AddAnimalForm />} />
 
         </Routes>
