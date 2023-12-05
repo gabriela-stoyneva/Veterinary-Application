@@ -28,8 +28,9 @@
     gap: 2.5em;
     margin: 1em 0 2em 0;
 }
-.questionArea label {
+.questionArea label, .addArea label {
     margin: 1em 0;
+    text-transform: uppercase;
 }
 .submitButton {
     margin-left: 3em;
@@ -44,10 +45,15 @@
     align-items: center;
     
 }
-.calendar input {
+.calendar input{
     display: block;
     flex: 1 1 45%;
 }
 .appointmentText {
     padding-top: 3em;
+}
+.addArea {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
 }
