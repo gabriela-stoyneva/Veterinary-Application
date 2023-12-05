@@ -14,6 +14,7 @@ import Hospital from './components/about/Hospital';
 import Doctors from './components/about/Doctors';
 import Team from './components/about/Team';
 import Services from './components/home/Services';
+import Questions from './components/contact-us/Questions';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path={Path.Doctors} element={<Doctors /> } />
           <Route path={Path.Team} element={<Team /> } />
           <Route path={Path.Services} element={<Services />} />
+          <Route path={Path.Questions} element={<Questions />}   />
           
         </Routes>
       </main>
