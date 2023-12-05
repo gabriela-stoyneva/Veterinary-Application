@@ -3,8 +3,9 @@
 }
 
 .media img{
+    margin: 0 auto;
     display: block;
-    width: 100%;
+    width: 60%;
     height: auto;
 
 }
@@ -13,7 +14,7 @@
     text-align: center;
 }
 .hospital p {
-    padding: 0 2em;
+    padding: 0 5em;
 }
 .media {
     margin-top: 2em;
