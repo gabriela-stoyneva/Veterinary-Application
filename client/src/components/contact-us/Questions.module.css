@@ -1,0 +1,20 @@
+.questions {
+    padding: 4em 3em;
+    display: flex;
+    flex-direction: column;
+}
+.questions h3 {
+    text-align: center;
+    margin: 1em 0 2em 0;
+}
+.questionArea {
+    display: flex;
+    flex-wrap: wrap;
+}
+.currentQuestion {
+    flex: 0 1 45%;
+    padding: 1.5em;
+}
+.currentQuestion h5 {
+    margin-bottom: 1em;
+}
