@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+import * as adoptAnimalService from '../../services/adoptAnimalService';
+
 import style from './Questions.module.css';
 
 export default function Questions() {
@@ -7,11 +9,9 @@ export default function Questions() {
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/data/questions')
-            .then((res) => res.json())
-            .then((data) => setQuestions(Object.values(data)))
+        adoptAnimalService.getAllQuestions()
+            .then((data) => setQuestions(data))
             .catch((error) => console.log(error))
-
     }, [])
 
     return (

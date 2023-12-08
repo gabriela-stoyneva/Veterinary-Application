@@ -1,18 +1,24 @@
 import { useEffect, useState } from "react";
 
+import * as adoptAnimalService from '../../services/adoptAnimalService';
+
 import style from './Doctors.module.css';
+
+
+
 
 export default function Doctors() {
 
     const [doctors, setDoctors] = useState([]);
 
-    useEffect(() => {
-        fetch('http://localhost:3030/data/doctors')
-            .then((res) => res.json())
-            .then((data) => setDoctors(Object.values(data)))
-            .catch((error) => console.log(error))
 
-    }, [])
+    useEffect(() => {
+        adoptAnimalService.getAllDoctors()
+            .then((data) => setDoctors(data))
+            .catch(err => {
+                console.log(err);
+            });
+    }, []);
 
     return (
         <div className={style.doctors}>

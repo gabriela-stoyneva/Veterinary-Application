@@ -1,16 +1,24 @@
 import { useEffect, useState } from 'react'
-import style from './Services.module.css';
+
 import ServiceItem from './ServiceItem';
+
+import * as adoptAnimalService from '../../services/adoptAnimalService';
+
+import style from './Services.module.css';
+
+
+//to add context services
 
 export default function Services() {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/services')
-            .then(result => result.json())
-            .then(data => setServices(Object.values(data)))
-
-    }, [])
+        adoptAnimalService.getAllServices()
+            .then((data) => setServices(data))
+            .catch(err => {
+                console.log(err);
+            });
+    }, []);
 
     return (
         <>

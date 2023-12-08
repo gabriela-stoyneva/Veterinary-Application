@@ -4,13 +4,17 @@ import { Link } from 'react-router-dom';
 import kitten from '../../assets/pictures/kittenSmaller.jpg';
 import Path from '../../lib/paths';
 
-import styles from './Home.module.css';
-import style from './Services.module.css';
+
 
 
 import AboutUs from './AboutUs';
 import ServiceItem from './ServiceItem';
-import BottomMenu from '../footer/BottomMenu';
+import * as adoptAnimalService from '../../services/adoptAnimalService';
+
+
+
+import styles from './Home.module.css';
+import style from './Services.module.css';
 
 
 
@@ -19,11 +23,13 @@ export default function Home() {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/data/services')
-            .then(result => result.json())
-            .then(data => setServices(Object.values(data)))
+        adoptAnimalService.getAllServices()
+            .then((data) => setServices(data))
+            .catch(err => {
+                console.log(err);
+            });
+    }, []);
 
-    }, [])
     const slicedArr = services.slice(0, 3)
 
 

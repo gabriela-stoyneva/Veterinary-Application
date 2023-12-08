@@ -1,12 +1,34 @@
 import * as request from "../lib/request";
 
-const baseUrl = 'http://localhost:3030/data/animals'
+const baseUrl = 'http://localhost:3030/data/animals';
+const doctorsUrl = 'http://localhost:3030/data/doctors';
+const servicesUrl = 'http://localhost:3030/data/services';
+const questionsUrl = 'http://localhost:3030/data/questions';
 
+//get collections
 export const getAll = async () => {
     const result = await request.get(baseUrl);
 
     return result;
 };
+export const getAllDoctors = async () => {
+    const result = await request.get(doctorsUrl);
+
+    return result;
+};
+export const getAllServices = async () => {
+    const result = await request.get(servicesUrl);
+
+    return result;
+};
+export const getAllQuestions = async () => {
+    const result = await request.get(questionsUrl);
+
+    return result;
+};
+
+
+
 
 export const getOne = async (gameId) => {
     const result = await request.get(`${baseUrl}/${animalId}`, );
