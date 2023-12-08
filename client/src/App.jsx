@@ -19,6 +19,7 @@ import Appointment from './components/contact-us/Appointment';
 import AddAnimalForm from './components/adoption/AddAnimalForm';
 import PetList from './components/adoption/PetList';
 import { AuthProvider } from './contexts/authContext';
+import Logout from './components/clients/Logout';
 
 
 function App() {
@@ -42,6 +43,7 @@ function App() {
             <Route path={Path.Appointment} element={<Appointment />} />
             <Route path={Path.Find} element={<PetList />} />
             <Route path={Path.Add} element={<AddAnimalForm />} />
+            <Route path={Path.Logout} element={<Logout />} />
 
           </Routes>
         </main>
