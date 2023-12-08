@@ -2,8 +2,10 @@ import { Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import Path from './lib/paths';
+import { AuthProvider } from './contexts/authContext';
 
 import './App.css';
+
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import Home from './components/home/Home';
@@ -18,7 +20,6 @@ import Questions from './components/contact-us/Questions';
 import Appointment from './components/contact-us/Appointment';
 import AddAnimalForm from './components/adoption/AddAnimalForm';
 import PetList from './components/adoption/PetList';
-import { AuthProvider } from './contexts/authContext';
 import Logout from './components/clients/Logout';
 
 
