@@ -7,7 +7,7 @@ export default function Questions() {
     const [questions, setQuestions] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/questions')
+        fetch('http://localhost:3030/data/questions')
             .then((res) => res.json())
             .then((data) => setQuestions(Object.values(data)))
             .catch((error) => console.log(error))

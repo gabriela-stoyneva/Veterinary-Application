@@ -7,7 +7,7 @@ export default function Doctors() {
     const [doctors, setDoctors] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/doctors')
+        fetch('http://localhost:3030/data/doctors')
             .then((res) => res.json())
             .then((data) => setDoctors(Object.values(data)))
             .catch((error) => console.log(error))

@@ -9,7 +9,7 @@ export default function PetList() {
     const [animals, setAnimals] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/animals')
+        fetch('http://localhost:3030/data/animals')
             .then((res) => res.json())
             .then((data) => setAnimals(Object.values(data)))
             .catch((error) => console.log(error))

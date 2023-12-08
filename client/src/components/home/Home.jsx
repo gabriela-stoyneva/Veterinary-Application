@@ -19,7 +19,7 @@ export default function Home() {
     const [services, setServices] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3030/jsonstore/services')
+        fetch('http://localhost:3030/data/services')
             .then(result => result.json())
             .then(data => setServices(Object.values(data)))
 
