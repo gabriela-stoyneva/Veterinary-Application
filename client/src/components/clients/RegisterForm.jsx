@@ -34,7 +34,7 @@ export default function RegisterForm() {
                 <label htmlFor="email">Email</label>
                 <input
                     type="email"
-                    name="email"
+                    name={RegisterFormKeys.Email}
                     id="email"
                     onChange={onChange}
                     values={values[RegisterFormKeys.Email]}
@@ -46,7 +46,7 @@ export default function RegisterForm() {
                 <label htmlFor="password">Password</label>
                 <input
                     type="password"
-                    name="password"
+                    name={RegisterFormKeys.Password}
                     id="password"
                     onChange={onChange}
                     values={values[RegisterFormKeys.Password]}
@@ -58,7 +58,7 @@ export default function RegisterForm() {
                 <label htmlFor="repeatPassword">Repeat Password</label>
                 <input 
                 type="password" 
-                name="repeatPassword" 
+                name={RegisterFormKeys.RepeatPassword} 
                 id="repeatPassword"
                 onChange={onChange}
                 values={values[RegisterFormKeys.RepeatPassword]}
