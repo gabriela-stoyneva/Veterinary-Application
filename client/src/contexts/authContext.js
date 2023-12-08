@@ -1,9 +1,9 @@
 import { createContext } from "react";
 import { useNavigate } from "react-router-dom";
 
-import * as authService from '../services/';
-import usePersistedState from "../hooks/usePersistedState";
-import Path from "../paths";
+import * as authService from '../services/authService';
+import usePersistedState from '../hooks/usePersistedState';
+import Path from '../lib/paths';
 
 const AuthContext = createContext();
 
@@ -48,6 +48,6 @@ export const AuthProvider = ({ children }) => {
   return <AuthContext.Provider value={values}>{children}</AuthContext.Provider>;
 };
 
-// AuthContext.displayName = "AuthContext";
+ AuthContext.displayName = "AuthContext";
 
 export default AuthContext;
