@@ -42,23 +42,29 @@ export const AuthProvider = ({
         try {
             const result = await adoptAnimalService.create(data)
 
-            console.log(result)
-
-        } catch {
-           console.error()
+        } catch (error) {
+           return error;
         }
-
-        
 
         navigate(Path.Find);
 
     };
+    const editSubmitHandler = async (animalId, data) => {
+        try {
+            const result = await adoptAnimalService.edit(animalId, data)
+
+        } catch (error) {
+            return error;
+        }
+
+    }
 
     const values = {
         loginSubmitHandler,
         registerSubmitHandler,
         logoutHandler,
         addItemHandler,
+        editSubmitHandler,
         username: auth.username || auth.email,
         email: auth.email,
         userId: auth._id,

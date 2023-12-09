@@ -22,6 +22,7 @@ import AddAnimalForm from './components/adoption/AddAnimalForm';
 import PetList from './components/adoption/PetList';
 import Logout from './components/clients/Logout';
 import DetailsAdoption from './components/adoption/DetailsAdoption';
+import Edit from './components/adoption/Edit';
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
             <Route path={Path.Find} element={<PetList />} />
             <Route path={Path.Add} element={<AddAnimalForm />} />
             <Route path={Path.Details} element={<DetailsAdoption /> } />
+            <Route path={Path.Edit} element={<Edit /> } />
            
 
           </Routes>

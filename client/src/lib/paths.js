@@ -10,6 +10,7 @@ const Path = {
     Find: "/find",
     Add: "/add", 
     Details: "/find/:animalId",
+    Edit: "/find/:animalId/edit",
     Hospital: "/hospital",
     Doctors: "/doctors",
     Team: "/team",

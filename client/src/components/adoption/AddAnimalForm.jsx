@@ -1,30 +1,19 @@
-import { useNavigate } from 'react-router-dom';
 
-import * as adoptAnimalService from '../../services/adoptAnimalService';
 
 import style from './AddAnimalForm.module.css';
 import { useContext } from 'react';
 import AuthContext from '../../contexts/authContext';
+import AddAnimalFormKeys from '../../lib/animalFormKeys';
 import useForm from '../../hooks/useForm';
 
 
 
-const AddAnimalFormKeys = {
-    YourName: 'yourName',
-    YourEmail: 'yourEmail',
-    PetName: 'petName',
-    AssumedAge: 'assumedAge',
-    AnimalType: 'animalType',
-    AnimalImage: 'animalImage',
-    AnimalInfo: 'animalInfo',
-
-
-};
 
 
 export default function AddAnimalForm() {
 
     const { addItemHandler } = useContext(AuthContext);
+    
     const { values, onChange, onSubmit } = useForm(addItemHandler, {
         [AddAnimalFormKeys.YourName]: '',
         [AddAnimalFormKeys.YourEmail]: '',
