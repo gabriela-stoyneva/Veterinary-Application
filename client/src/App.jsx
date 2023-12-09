@@ -49,7 +49,7 @@ function App() {
 
             <Route path={Path.Find} element={<PetList />} />
             <Route path={Path.Add} element={<AddAnimalForm />} />
-            <Route path="/animals/:animalId" element={<DetailsAdoption /> } />
+            <Route path={Path.Details} element={<DetailsAdoption /> } />
            
 
           </Routes>

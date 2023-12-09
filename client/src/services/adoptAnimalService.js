@@ -52,7 +52,7 @@ export const create = async ({
 };
 
 export const getOne = async (animalId) => {
-    
+
   const result = await request.get(`${baseUrl}/${animalId}`);
 
   return result;
@@ -78,5 +78,4 @@ export const edit = async (animalId, animalData) => {
   return result;
 };
 
-export const remove = async (animalId) =>
-  request.remove(`${baseUrl}/${animalId}`);
+export const remove = async (animalId) => request.remove(`${baseUrl}/${animalId}`);

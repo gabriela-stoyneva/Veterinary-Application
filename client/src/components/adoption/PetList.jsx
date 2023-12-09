@@ -41,8 +41,7 @@ export default function PetList() {
                             <img src={animal.animalImage} alt="animal" />
                         </div>
                         <div>
-                            <button><Link to={`/animals/${animal._id}`}>Details</Link></button>
-                
+                            <button type="button"><Link to={`/find/${animal._id}`}>Details</Link></button>
                         </div>
                     </article>
                 ))}

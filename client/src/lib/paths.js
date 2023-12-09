@@ -9,6 +9,7 @@ const Path = {
     Questions: "/questions",
     Find: "/find",
     Add: "/add", 
+    Details: "/find/:animalId",
     Hospital: "/hospital",
     Doctors: "/doctors",
     Team: "/team",

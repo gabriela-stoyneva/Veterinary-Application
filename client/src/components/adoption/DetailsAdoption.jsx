@@ -8,6 +8,7 @@ import AuthContext from "../../contexts/authContext";
 import commentReducer from '../../lib/commentReducer';
 ;
 import Path from '../../lib/paths';
+import { pathReducer } from '../../lib/pathReducer';
 import useForm from '../../hooks/useForm';
 
 import style from './PetList.module.css'
@@ -57,6 +58,20 @@ export default function DetailsAdoption() {
         comment: '',
     });
 
+    async function deleteButtonClickHandler() {
+    
+
+         const hasConfirmed = confirm(`Are you sure you want to delete ${animal.petName}`);
+
+        if (hasConfirmed) {
+            await adoptAnimalService.remove(animalId);
+        }
+
+        navigate(Path.Find);
+
+    }
+
+
 
     return (
         <div className={style.petList}>
@@ -64,8 +79,6 @@ export default function DetailsAdoption() {
             <h2>
                 Animal Details:
             </h2>
-
-
 
             <article key={animal._id} className={style.animalCard}>
                 <div>
@@ -101,26 +114,33 @@ export default function DetailsAdoption() {
             </ul>
 
 
+
+            {userId === animal._ownerId && (
+                <div >
+                    <button><Link to={pathReducer(Path.GameEdit, { animalId })}>Edit</Link></button>
+                    <button
+                        type="button"
+                        onClick={deleteButtonClickHandler}>
+                        Delete
+                    </button>
+                </div>
+            )}
+
             <article >
                 <label>Add comment:</label>
                 <form className="form" onSubmit={onSubmit}>
-                    <textarea name="comment" value={values.comment} onChange={onChange} placeholder="Comment......"></textarea>
+                    <textarea name="comment"
+                        value={values.comment}
+                        onChange={onChange}
+                        placeholder="Comment......">
+
+                    </textarea>
                     <button type="submit">Add Comment</button>
                 </form>
             </article>
 
 
-            {userId === animal._ownerId && (
-                <div >
-                     {/* <Link to={pathToUrl(Path.GameEdit, { gameId })} className="button">Edit</Link> */}
-                    {/* <button className="button" onClick={deleteButtonClickHandler}>Delete</button> */}
-                </div>
-            )}
-
         </div>
-
-
-
 
     )
 }
