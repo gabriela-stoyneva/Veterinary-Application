@@ -1,5 +1,5 @@
 const commentReducer = (state, action) => {
-    
+
     switch (action?.type) {
         case 'GET_ALL_COMMENTS':
             return [...action.payload];
@@ -12,4 +12,4 @@ const commentReducer = (state, action) => {
     }
 }
 
-export default reducer;
+export default commentReducer;

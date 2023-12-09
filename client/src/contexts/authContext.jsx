@@ -41,6 +41,7 @@ export const AuthProvider = ({
     const addItemHandler = async (data) => {
         try {
             const result = await adoptAnimalService.create(data)
+
             console.log(result)
 
         } catch {
@@ -49,7 +50,7 @@ export const AuthProvider = ({
 
         
 
-        navigate(Path.Home);
+        navigate(Path.Find);
 
     };
 

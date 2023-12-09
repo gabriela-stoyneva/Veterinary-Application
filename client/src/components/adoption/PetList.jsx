@@ -1,7 +1,10 @@
 import { useEffect, useState } from "react";
 
+
+
 import style from './PetList.module.css'
 import Path from "../../lib/paths";
+import { Link } from "react-router-dom";
 
 
 
@@ -38,7 +41,8 @@ export default function PetList() {
                             <img src={animal.animalImage} alt="animal" />
                         </div>
                         <div>
-                            <button><Link to={Path.Details}>Details</Link></button>
+                            <button><Link to={`/animals/${animal._id}`}>Details</Link></button>
+                
                         </div>
                     </article>
                 ))}

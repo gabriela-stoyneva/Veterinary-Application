@@ -51,7 +51,8 @@ export const create = async ({
   return result;
 };
 
-export const getOne = async (gameId) => {
+export const getOne = async (animalId) => {
+    
   const result = await request.get(`${baseUrl}/${animalId}`);
 
   return result;

@@ -21,6 +21,7 @@ import Appointment from './components/contact-us/Appointment';
 import AddAnimalForm from './components/adoption/AddAnimalForm';
 import PetList from './components/adoption/PetList';
 import Logout from './components/clients/Logout';
+import DetailsAdoption from './components/adoption/DetailsAdoption';
 
 
 function App() {
@@ -35,16 +36,21 @@ function App() {
             <Route path={Path.Home} element={<Home />} />
             <Route path={Path.Login} element={<LoginForm />} />
             <Route path={Path.Register} element={<RegisterForm />} />
+            <Route path={Path.Logout} element={<Logout />} />
+
             <Route path={Path.ContactUs} element={<ContactUsForm />} />
             <Route path={Path.Hospital} element={<Hospital />} />
             <Route path={Path.Doctors} element={<Doctors />} />
             <Route path={Path.Team} element={<Team />} />
+
             <Route path={Path.Services} element={<Services />} />
             <Route path={Path.Questions} element={<Questions />} />
             <Route path={Path.Appointment} element={<Appointment />} />
+
             <Route path={Path.Find} element={<PetList />} />
             <Route path={Path.Add} element={<AddAnimalForm />} />
-            <Route path={Path.Logout} element={<Logout />} />
+            <Route path="/animals/:animalId" element={<DetailsAdoption /> } />
+           
 
           </Routes>
         </main>
