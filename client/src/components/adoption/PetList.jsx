@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 
 import style from './PetList.module.css'
+import Path from "../../lib/paths";
 
 
 
@@ -37,7 +38,7 @@ export default function PetList() {
                             <img src={animal.animalImage} alt="animal" />
                         </div>
                         <div>
-                            <button>Details</button>
+                            <button><Link to={Path.Details}>Details</Link></button>
                         </div>
                     </article>
                 ))}
