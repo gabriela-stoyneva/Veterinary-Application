@@ -3,6 +3,8 @@ import useForm from "../../hooks/useForm";
 import AuthContext from "../../contexts/authContext";
 
 import style from './Form.module.css';
+import { Link } from "react-router-dom";
+import Path from "../../lib/paths";
 
 const LoginFormKeys = {
     Email: 'email',
@@ -47,7 +49,7 @@ export default function LoginForm() {
 
             <div>
                 <button type="submit">Login</button>
-                <p className={style.message}>You don't have account yet? Register <span className={style.here}>here!</span></p>
+                <p className={style.message}>You don't have account yet? Register <Link to={Path.Register}><span className={style.here}>here!</span></Link></p>
             </div>
 
 
