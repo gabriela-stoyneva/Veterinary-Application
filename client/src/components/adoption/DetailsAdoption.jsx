@@ -15,6 +15,7 @@ import style from './PetList.module.css'
 
 
 export default function DetailsAdoption() {
+    const [message, setMessage] = useState(null);
 
     const navigate = useNavigate();
 
@@ -42,44 +43,65 @@ export default function DetailsAdoption() {
     }, [animalId]);
 
     const addCommentHandler = async (values) => {
-        const newComment = await commentService.create(
-            animalId,
-            values.comment
-        );
 
-        newComment.owner = { email };
 
-        dispatch({
-            type: 'ADD_COMMENT',
-            payload: newComment
-        })
+        try {
+            if (values.comment.length > 6) {
+                const newComment = await commentService.create(
+                    animalId,
+                    values.comment
+                );
+
+                newComment.owner = { email };
+
+                dispatch({
+                    type: 'ADD_COMMENT',
+                    payload: newComment
+                })
+                setMessage('Your comment was added!')
+
+            } else {
+                setMessage('The comment is too short!')
+
+            }
+
+            values['comment'] = '';
+
+
+        } catch (error) {
+            setMessage(error.message);
+        }
+
     }
+
     const { values, onChange, onSubmit } = useForm(addCommentHandler, {
         comment: '',
     });
 
+
+
+
     async function deleteButtonClickHandler() {
-    
-         const hasConfirmed = confirm(`Are you sure you want to delete ${animal.petName}`);
+
+        const hasConfirmed = confirm(`Are you sure you want to delete ${animal.petName}`);
 
         if (hasConfirmed) {
 
             try {
-
                 await adoptAnimalService.remove(animalId);
                 navigate(Path.Find);
 
             } catch (error) {
                 return error;
-            } 
-            
-        }  
+            }
+
+        }
     }
 
 
 
     return (
-        <div className={style.petList}>
+        <div className={style.details}>
 
             <h2>
                 Animal Details:
@@ -105,18 +127,6 @@ export default function DetailsAdoption() {
                 </div>
             </article>
 
-            <h2>Comments about this {animal.animalType}:</h2>
-
-            {comments.length === 0 && (
-                <p className="no-comment">No comments.</p>
-            )}
-            <ul>
-                {comments.map(({ _id, text, owner: { email } }) => (
-                    <li key={_id} className="comment">
-                        <p>{email}: {text}</p>
-                    </li>
-                ))}
-            </ul>
 
 
 
@@ -131,18 +141,51 @@ export default function DetailsAdoption() {
                 </div>
             )}
 
-            <article >
-                <label>Add comment:</label>
+            <div className={style.comments}></div>
+            <article className={style.commentArticle}>
+
                 <form className="form" onSubmit={onSubmit}>
-                    <textarea name="comment"
+                    <label htmlFor="comment">Add comment:</label>
+                    <textarea
+                        id="comment"
+                        name="comment"
                         value={values.comment}
                         onChange={onChange}
-                        placeholder="Comment......">
+                        placeholder="Comment......"
+                        cols='60'
+                        rows='10'>
 
                     </textarea>
                     <button type="submit">Add Comment</button>
+
+                    {message !== null && (
+                        <div className={style.error}>
+                            <p>{message}</p>
+                        </div>
+
+                    )}
                 </form>
+
             </article>
+            <h2>Comments about this {animal.animalType}:</h2>
+            <div className={style.allComments}>
+                {comments.length === 0 && (
+                    <p className="no-comment">No comments.</p>
+                )}
+                <ul>
+                    {comments.map(({ _id, text, owner: { email } }) => (
+                        <li key={_id} className="comment">
+                            <p>{email}: {text}</p>
+                        </li>
+                    ))}
+                </ul>
+
+            </div>
+
+
+
+
+
 
 
         </div>
