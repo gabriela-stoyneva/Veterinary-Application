@@ -126,7 +126,7 @@ export default function DetailsAdoption() {
                     </div>
                     { userId === animal._ownerId && (
                     <div className={style.buttons}>
-                        <button><Link to={pathReducer(Path.Edit, { animalId })}>Edit</Link></button>
+                        <Link to={pathReducer(Path.Edit, { animalId })}><button>Edit</button></Link>
                         <button
                             type="button"
                             onClick={deleteButtonClickHandler}>

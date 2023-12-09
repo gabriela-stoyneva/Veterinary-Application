@@ -50,9 +50,3 @@ export default function PetList() {
         </div>
     )
 }
-
-{/* <p>{animal.story}</p> */ }
-{/* <div className={style.author}>
-                        <p >Publish by: {animal.yourName}  </p>
-                        <p>{animal.yourEmail} </div></p>
-                     <p>Assumed Age: {animal.assumedAge}</p> */}
