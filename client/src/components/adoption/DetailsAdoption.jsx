@@ -9,8 +9,8 @@ import reducer from './commentReducer';
 
 import useForm from '../../hooks/useForm';
 
-import { pathToUrl } from "../../utils/pathUtils";
-import Path from "../../paths";
+import { pathReducer } from '../../lib/pathReducer';
+import Path from '../../lib/paths';
 
 
 export default function DetailsAdoption() {
