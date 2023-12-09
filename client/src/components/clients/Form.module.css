@@ -23,8 +23,10 @@
     color: #3c6e71;  
     text-transform: uppercase;
 }
-.error p {
+.error{
+    padding-top: 0;
     color: darkred;
+    text-transform: none;
 }
 
 

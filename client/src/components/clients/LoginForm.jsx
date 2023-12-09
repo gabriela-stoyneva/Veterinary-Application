@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext} from "react";
 import useForm from "../../hooks/useForm";
 import AuthContext from "../../contexts/authContext";
 
@@ -13,22 +13,15 @@ const LoginFormKeys = {
 
 
 export default function LoginForm() {
-    const [err, setError] = useState(null);
 
-    try {
-        const { loginSubmitHandler } = useContext(AuthContext);
+    
+        const { loginSubmitHandler, err } = useContext(AuthContext);
         const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
             [LoginFormKeys.Email]: '',
             [LoginFormKeys.Password]: '',
         });
 
-    } catch (error) {
-        setError(error.message)
-    }
-
-
-
-
+    
     return (
         <form method='POST' className={style.login} onSubmit={onSubmit}>
             <h2>Login</h2>
@@ -60,7 +53,7 @@ export default function LoginForm() {
             <div>
                 <button type="submit">Login</button>
                 <p className={style.message}>You don't have account yet? Register <Link to={Path.Register}><span className={style.here}>here!</span></Link></p>
-                {err && (<p className={style.error}></p>)}
+                {err && (<p className={style.error}>{err.message}</p>)}
             </div>
         </form>
     )

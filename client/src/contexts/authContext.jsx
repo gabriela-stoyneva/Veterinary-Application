@@ -1,4 +1,4 @@
-import { createContext } from "react";
+import { createContext, useState } from "react";
 import { useNavigate } from 'react-router-dom';
 
 import * as authService from '../services/authService';
@@ -13,6 +13,7 @@ export const AuthProvider = ({
 }) => {
     const navigate = useNavigate();
     const [auth, setAuth] = usePersistedState('auth', {});
+    const [err, setError] = useState(null)
 
     const loginSubmitHandler = async (values) => {
         try {
@@ -20,17 +21,18 @@ export const AuthProvider = ({
 
             setAuth(result);
             localStorage.setItem('accessToken', result.accessToken);
+            setError(null)
 
             navigate(Path.Home);
 
         } catch (error) {
-            return error;
+            setError(error);
         }
 
     };
 
     const registerSubmitHandler = async (values) => {
-        
+
         if (values.password === values['confirm-password']) {
             try {
                 const result = await authService.register(values.email, values.password);
@@ -38,27 +40,31 @@ export const AuthProvider = ({
                 setAuth(result);
     
                 localStorage.setItem('accessToken', result.accessToken);
+                setError(null)
     
                 navigate(Path.Home);
+               
     
             } catch (error) {
-                return error;
+                setError(error);
             }
              
         } else {
-            throw new Error('Password miss match!');
+            setError({'message':'Password miss match!'});
         }
-        
-
+    
     };
 
     const logoutHandler = () => {
         setAuth({});
+
         try {
             localStorage.removeItem('accessToken');
+            setError(null)
             
         } catch (error) {
-           return error; 
+
+           setError(error); 
         }
         
     };
@@ -66,11 +72,11 @@ export const AuthProvider = ({
     const addItemHandler = async (data) => {
         try {
             const result = await adoptAnimalService.create(data)
+            setError(null)
 
         } catch (error) {
-            return error;
+           setError(error.message);
         }
-
         navigate(Path.Find);
 
     };
@@ -81,6 +87,7 @@ export const AuthProvider = ({
         registerSubmitHandler,
         logoutHandler,
         addItemHandler,
+        err,
         username: auth.username || auth.email,
         email: auth.email,
         userId: auth._id,

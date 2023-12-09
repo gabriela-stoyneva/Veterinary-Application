@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext} from "react";
 
 import style from './Form.module.css';
 
@@ -16,20 +16,14 @@ const RegisterFormKeys = {
 };
 
 export default function RegisterForm() {
-    const [err, setError] = useState(null);
+    
+    const { registerSubmitHandler, err } = useContext(AuthContext);
 
-    try {
-        const { registerSubmitHandler } = useContext(AuthContext);
-
-        const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
-            [RegisterFormKeys.Email]: '',
-            [RegisterFormKeys.Password]: '',
-            [RegisterFormKeys.ConfirmPassword]: '',
-        });
-    } catch (error) {
-        setError(error.message);
-    }
-
+    const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
+        [RegisterFormKeys.Email]: '',
+        [RegisterFormKeys.Password]: '',
+        [RegisterFormKeys.ConfirmPassword]: '',
+    });
 
 
     return (
@@ -80,7 +74,7 @@ export default function RegisterForm() {
                 <button type="submit" value="Register">Register</button>
                 <p className={style.message}>Do you have account? Login <Link to={Path.Login}><span className={style.here}>here!</span></Link> </p>
                 {err && (
-                    <p className={style.err}>{err}</p>
+                    <p className={style.error}>{err.message}</p>
                 )}
             </div>
 
