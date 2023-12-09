@@ -1,0 +1,32 @@
+.info {
+    margin: 4em auto;
+    max-width: 60em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    border: 3px solid whitesmoke;
+    border-radius: 2em;
+}
+.infoContainer {
+    display: flex;
+    gap: 3em;
+}
+.infoContainer div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: start;
+    text-transform: uppercase;
+}
+.submitButton {
+    margin: 3em;
+    background-color: darkslategrey;
+
+}
+
+.animalInfoArea {
+    padding-top: 3em;
+    display: flex;
+    flex-direction: column;
+}

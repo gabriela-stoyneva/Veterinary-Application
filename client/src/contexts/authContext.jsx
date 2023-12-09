@@ -2,6 +2,7 @@ import { createContext } from "react";
 import { useNavigate } from 'react-router-dom';
 
 import * as authService from '../services/authService';
+import * as adoptAnimalService from '../services/adoptAnimalService';
 import usePersistedState from '../hooks/usePersistedState';
 import Path from '../lib/paths';
 
@@ -37,10 +38,26 @@ export const AuthProvider = ({
         localStorage.removeItem('accessToken');
     };
 
+    const addItemHandler = async (data) => {
+        try {
+            const result = await adoptAnimalService.create(data)
+            console.log(result)
+
+        } catch {
+           console.error()
+        }
+
+        
+
+        navigate(Path.Home);
+
+    };
+
     const values = {
         loginSubmitHandler,
         registerSubmitHandler,
         logoutHandler,
+        addItemHandler,
         username: auth.username || auth.email,
         email: auth.email,
         userId: auth._id,
