@@ -1,29 +1,18 @@
-import { useEffect, useState } from 'react'
+import { useContext} from 'react'
 
 import ServiceItem from './ServiceItem';
-
-import * as adoptAnimalService from '../../services/adoptAnimalService';
+import ServiceContext from '../../contexts/serviceContext';
 
 import style from './Services.module.css';
 
 
-//to add context services
-
 export default function Services() {
-    const [services, setServices] = useState([]);
 
-    useEffect(() => {
-        adoptAnimalService.getAllServices()
-            .then((data) => setServices(data))
-            .catch(err => {
-                console.log(err);
-            });
-    }, []);
+    const { services } = useContext(ServiceContext);
 
     return (
         <>
             <section className={style.services}>
-
                 {services.map((service) => (
                     <article key={service._id} className={style.articleService}>
                         <ServiceItem
@@ -38,8 +27,6 @@ export default function Services() {
                 ))}
 
             </section>
-
-
         </>
     )
 }

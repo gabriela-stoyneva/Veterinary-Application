@@ -1,35 +1,20 @@
-import { useEffect, useState } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 
 import kitten from '../../assets/pictures/kittenSmaller.jpg';
 import Path from '../../lib/paths';
 
-
-
-
-import AboutUs from './AboutUs';
-import ServiceItem from './ServiceItem';
-import * as adoptAnimalService from '../../services/adoptAnimalService';
-
-
-
 import styles from './Home.module.css';
 import style from './Services.module.css';
 
 
+import AboutUs from './AboutUs';
+import ServiceContext from '../../contexts/serviceContext';
+
 
 export default function Home() {
-    // todo: useContext
-    const [services, setServices] = useState([]);
 
-    useEffect(() => {
-        adoptAnimalService.getAllServices()
-            .then((data) => setServices(data))
-            .catch(err => {
-                console.log(err);
-            });
-    }, []);
-
+    const { services } = useContext(ServiceContext)
     const slicedArr = services.slice(0, 3)
 
 
@@ -43,7 +28,7 @@ export default function Home() {
                     </h1>
                     <button>
                         <Link to={Path.Appointment}>make an appointment</Link>
-                        
+
                     </button>
                 </div>
             </div >
@@ -55,15 +40,14 @@ export default function Home() {
 
                     {slicedArr.map((service) => (
                         <article key={service._id} className={style.articleService}>
-                            <ServiceItem
+                            <div className={style.info}>
+                                <i className={service.iconUrl}></i>
+                                <h3>{service.service}</h3>
+                            </div>
 
-                                id={service._id}
-                                iconUrl={service.iconUrl}
-                                service={service.service}
-                                text={service.text}
-                                imageUrl={service.imageUrl}
-                            />
-
+                            <div className={style.media}>
+                                <img src={service.imageUrl} />
+                            </div>
                         </article>
 
                     ))}
@@ -77,10 +61,8 @@ export default function Home() {
             </div>
 
             <AboutUs />
-    
+
         </>
-
-
 
     )
 }

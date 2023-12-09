@@ -24,12 +24,14 @@ import Logout from './components/clients/Logout';
 import DetailsAdoption from './components/adoption/DetailsAdoption';
 import Edit from './components/adoption/Edit';
 import RouteGuard from './lib/routeGuard';
+import { ServiceProvider } from './contexts/serviceContext';
 
 
 function App() {
 
   return (
     <AuthProvider>
+      <ServiceProvider>
       <div className='root'>
         <Header />
 
@@ -62,6 +64,7 @@ function App() {
 
         <Footer />
       </div>
+      </ServiceProvider>
     </AuthProvider>
   )
 }
