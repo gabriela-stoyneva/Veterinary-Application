@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import useForm from "../../hooks/useForm";
 import AuthContext from "../../contexts/authContext";
 
@@ -13,12 +13,20 @@ const LoginFormKeys = {
 
 
 export default function LoginForm() {
+    const [err, setError] = useState(null);
 
-    const { loginSubmitHandler } = useContext(AuthContext);
-    const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
-        [LoginFormKeys.Email]: '',
-         [LoginFormKeys.Password]: '',
-    });
+    try {
+        const { loginSubmitHandler } = useContext(AuthContext);
+        const { values, onChange, onSubmit } = useForm(loginSubmitHandler, {
+            [LoginFormKeys.Email]: '',
+            [LoginFormKeys.Password]: '',
+        });
+
+    } catch (error) {
+        setError(error.message)
+    }
+
+
 
 
     return (
@@ -29,10 +37,11 @@ export default function LoginForm() {
                 <label htmlFor="email">Email</label>
                 <input
                     type="email"
-                    name= {LoginFormKeys.Email}
+                    name={LoginFormKeys.Email}
                     id="email"
+                    required
                     onChange={onChange}
-                    value={values [LoginFormKeys.Email]}
+                    value={values[LoginFormKeys.Email]}
                 />
             </div>
 
@@ -40,19 +49,19 @@ export default function LoginForm() {
                 <label htmlFor="password">Password</label>
                 <input
                     type="password"
-                    name= {LoginFormKeys.Password}
+                    name={LoginFormKeys.Password}
                     id="password"
                     onChange={onChange}
                     value={values[LoginFormKeys.Password]}
+                    required
                 />
             </div>
 
             <div>
                 <button type="submit">Login</button>
                 <p className={style.message}>You don't have account yet? Register <Link to={Path.Register}><span className={style.here}>here!</span></Link></p>
+                {err && (<p className={style.error}></p>)}
             </div>
-
-
         </form>
     )
 }

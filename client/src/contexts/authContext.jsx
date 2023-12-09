@@ -30,18 +30,25 @@ export const AuthProvider = ({
     };
 
     const registerSubmitHandler = async (values) => {
-        try {
-            const result = await authService.register(values.email, values.password);
-
-            setAuth(result);
-
-            localStorage.setItem('accessToken', result.accessToken);
-
-            navigate(Path.Home);
-
-        } catch (error) {
-            return error;
+        
+        if (values.password === values['confirm-password']) {
+            try {
+                const result = await authService.register(values.email, values.password);
+    
+                setAuth(result);
+    
+                localStorage.setItem('accessToken', result.accessToken);
+    
+                navigate(Path.Home);
+    
+            } catch (error) {
+                return error;
+            }
+             
+        } else {
+            throw new Error('Password miss match!');
         }
+        
 
     };
 

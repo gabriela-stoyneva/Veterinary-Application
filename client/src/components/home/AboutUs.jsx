@@ -1,5 +1,5 @@
 import style from './AboutUs.module.css';
-import doctors from '../../assets/pictures/doctors.jpg'
+import doctors from '../../assets/pictures/doctors.jpg';
 import { Link } from 'react-router-dom';
 import Path from '../../lib/paths';
 

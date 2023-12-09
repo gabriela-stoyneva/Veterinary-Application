@@ -16,14 +16,21 @@ const RegisterFormKeys = {
 };
 
 export default function RegisterForm() {
+    const [err, setError] = useState(null);
 
-    const { registerSubmitHandler } = useContext(AuthContext);
+    try {
+        const { registerSubmitHandler } = useContext(AuthContext);
 
-    const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
-        [RegisterFormKeys.Email]: '',
-        [RegisterFormKeys.Password]: '',
-        [RegisterFormKeys.ConfirmPassword]: '',
-    });
+        const { values, onChange, onSubmit } = useForm(registerSubmitHandler, {
+            [RegisterFormKeys.Email]: '',
+            [RegisterFormKeys.Password]: '',
+            [RegisterFormKeys.ConfirmPassword]: '',
+        });
+    } catch (error) {
+        setError(error.message);
+    }
+
+
 
     return (
         <form className={style.register} onSubmit={onSubmit}>
@@ -38,6 +45,7 @@ export default function RegisterForm() {
                     id="email"
                     onChange={onChange}
                     values={values[RegisterFormKeys.Email]}
+                    required
                 />
             </div>
 
@@ -50,18 +58,20 @@ export default function RegisterForm() {
                     id="password"
                     onChange={onChange}
                     values={values[RegisterFormKeys.Password]}
+                    required
                 />
             </div>
 
 
             <div>
                 <label htmlFor="repeatPassword">Repeat Password</label>
-                <input 
-                type="password" 
-                name={RegisterFormKeys.RepeatPassword} 
-                id="repeatPassword"
-                onChange={onChange}
-                values={values[RegisterFormKeys.RepeatPassword]}
+                <input
+                    type="password"
+                    name={RegisterFormKeys.RepeatPassword}
+                    id="repeatPassword"
+                    onChange={onChange}
+                    values={values[RegisterFormKeys.RepeatPassword]}
+                    required
                 />
 
             </div>
@@ -69,6 +79,9 @@ export default function RegisterForm() {
             <div>
                 <button type="submit" value="Register">Register</button>
                 <p className={style.message}>Do you have account? Login <Link to={Path.Login}><span className={style.here}>here!</span></Link> </p>
+                {err && (
+                    <p className={style.err}>{err}</p>
+                )}
             </div>
 
         </form>

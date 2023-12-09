@@ -13,8 +13,7 @@ export default function Header() {
         <>
             <header>
                 <div className={style.logo}>
-                    <Link to={Path.Home}><img src={logo} alt="logo" /></Link>
-                    
+                    <Link to={Path.Home}><img src={logo} alt="logo" /></Link>    
                 </div>
 
                 <Navigation />
