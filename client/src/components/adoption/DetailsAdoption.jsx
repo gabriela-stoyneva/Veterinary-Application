@@ -11,7 +11,7 @@ import Path from '../../lib/paths';
 import { pathReducer } from '../../lib/pathReducer';
 import useForm from '../../hooks/useForm';
 
-import style from './PetList.module.css'
+import style from './DetailsAdoption.module.css';
 
 
 export default function DetailsAdoption() {
@@ -101,91 +101,89 @@ export default function DetailsAdoption() {
 
 
     return (
+
         <div className={style.details}>
 
-            <h2>
-                Animal Details:
-            </h2>
+            <h2> Animal Details: </h2>
 
-            <article key={animal._id} className={style.animalCard}>
-                <div>
-                    <h5>{animal.petName}</h5>
-                    <p>Type: {animal.animalType}</p>
+            <article key={animal._id} >
 
-                </div>
+                <div className={style.animalCard}>
+                    <h5 className={style.name}>{animal.petName}</h5>
 
-                <div className={style.media}>
-                    <img src={animal.animalImage} alt="animal" />
-                </div>
-                <div className={style.animalDetailInfo}>
-                    <p>Assumed Age: {animal.assumedAge}</p>
-                    <p>Everything we know for this animal: {animal.animalInfo}</p>
-                </div>
-                <div className={style.author}>
-                    <p>Publish by: {animal.yourName}</p>
-                    <p>Publisher email: {animal.yourEmail}</p>
-                </div>
-            </article>
-
-
-
-
-            {userId === animal._ownerId && (
-                <div >
-                    <button><Link to={pathReducer(Path.GameEdit, { animalId })}>Edit</Link></button>
-                    <button
-                        type="button"
-                        onClick={deleteButtonClickHandler}>
-                        Delete
-                    </button>
-                </div>
-            )}
-
-            <div className={style.comments}></div>
-            <article className={style.commentArticle}>
-
-                <form className="form" onSubmit={onSubmit}>
-                    <label htmlFor="comment">Add comment:</label>
-                    <textarea
-                        id="comment"
-                        name="comment"
-                        value={values.comment}
-                        onChange={onChange}
-                        placeholder="Comment......"
-                        cols='60'
-                        rows='10'>
-
-                    </textarea>
-                    <button type="submit">Add Comment</button>
-
-                    {message !== null && (
-                        <div className={style.error}>
-                            <p>{message}</p>
+                    <div className={style.info}>
+                        <div className={style.media}>
+                            <img src={animal.animalImage} alt="animal" />
+                        </div>
+                        <div className={style.animalDetailInfo}>
+                            <p>Type: {animal.animalType}</p>
+                            <p>Assumed Age: {animal.assumedAge}</p>
+                            <p>Everything we know for this animal: {animal.animalInfo}</p>
+                            <p>Publish by: {animal.yourName}</p>
+                            <p>Publisher email: {animal.yourEmail}</p>
                         </div>
 
-                    )}
-                </form>
-
-            </article>
-            <h2>Comments about this {animal.animalType}:</h2>
-            <div className={style.allComments}>
-                {comments.length === 0 && (
-                    <p className="no-comment">No comments.</p>
+                    </div>
+                    { userId === animal._ownerId && (
+                    <div className={style.buttons}>
+                        <button><Link to={pathReducer(Path.GameEdit, { animalId })}>Edit</Link></button>
+                        <button
+                            type="button"
+                            onClick={deleteButtonClickHandler}>
+                            Delete
+                        </button>
+                    </div>
                 )}
-                <ul>
-                    {comments.map(({ _id, text, owner: { email } }) => (
-                        <li key={_id} className="comment">
-                            <p>{email}: {text}</p>
-                        </li>
-                    ))}
-                </ul>
+                </div>
+            </article>
+
+
+            <div className={style.comments}>
+                <article className={style.commentArticle}>
+
+                    <form className={style.form} onSubmit={onSubmit}>
+                        <label htmlFor="comment">Add comment:</label>
+                        <textarea
+                            id="comment"
+                            name="comment"
+                            value={values.comment}
+                            onChange={onChange}
+                            placeholder="Comment......"
+                            cols='60'
+                            rows='10'>
+
+                        </textarea>
+                        <button type="submit">Add Comment</button>
+
+                        {message !== null && (
+                            <div className={style.error}>
+                                <p>{message}</p>
+                            </div>
+
+                        )}
+                    </form>
+
+                </article>
+                <div>
+                    <h4>Comments about this {animal.animalType}:</h4>
+                    <div className={style.allComments}>
+                        {comments.length === 0 && (
+                            <p className="no-comment">No comments.</p>
+                        )}
+                        <ul>
+                            {comments.map(({ _id, text, owner: { email } }) => (
+                                <li key={_id} className={style.currentComment}>
+                                    <p>{text}  - by: {email}</p>
+                                </li>
+                            ))}
+                        </ul>
+
+                    </div>
+
+                </div>
+                
 
             </div>
-
-
-
-
-
 
 
         </div>
