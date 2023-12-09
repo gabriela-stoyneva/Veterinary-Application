@@ -24,6 +24,7 @@ import DetailsAdoption from './components/adoption/DetailsAdoption';
 import Edit from './components/adoption/Edit';
 import RouteGuard from './lib/routeGuard';
 import { ServiceProvider } from './contexts/serviceContext';
+import NotFound from './components/about/NotFound';
 
 
 function App() {
@@ -56,6 +57,7 @@ function App() {
               <Route path={Path.Add} element={<AddAnimalForm />} /> 
               <Route path={Path.Edit} element={<Edit />} />
             </Route>
+            <Route path='*' element={<NotFound />} />
 
           </Routes>
         </main>
