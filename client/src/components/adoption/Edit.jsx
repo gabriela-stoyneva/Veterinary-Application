@@ -45,7 +45,7 @@ export default function Edit() {
         for (const currentValue of arrValidate) {
             if (currentValue === '' || currentValue === ' ') {
                 setError('Fill all fields!');
-                // navigate(`/find/${animal._id}/edit`);
+    
                 return
             }
         }

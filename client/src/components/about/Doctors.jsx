@@ -16,7 +16,7 @@ export default function Doctors() {
         adoptAnimalService.getAllDoctors()
             .then((data) => setDoctors(data))
             .catch(err => {
-                console.log(err);
+                return(err);
             });
     }, []);
 

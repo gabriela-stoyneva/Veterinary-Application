@@ -48,11 +48,7 @@ export default function Navigation() {
                                 CONTACT US
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                {isAuthenticated && (<>
-                                    <Dropdown.Item as={Link} to={Path.Appointment}>APPOINTMENT</Dropdown.Item>
-                                    <Dropdown.Item as={Link} to={Path.ContactUs}>CONTACT US</Dropdown.Item>
-                                </>
-                                )}
+                                <Dropdown.Item as={Link} to={Path.ContactUs}>CONTACT US</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={Path.Questions}>COMMONLY ASKED QUESTIONS</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
@@ -67,7 +63,7 @@ export default function Navigation() {
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
                                 <Dropdown.Item as={Link} to={Path.Find}>FIND PET</Dropdown.Item>
-                                {isAuthenticated && (<Dropdown.Item as={Link} to={Path.Add}>ADD ANIMAL IN NEED</Dropdown.Item>)}   
+                                {isAuthenticated && (<Dropdown.Item as={Link} to={Path.Add}>ADD ANIMAL IN NEED</Dropdown.Item>)}
                             </Dropdown.Menu>
                         </Dropdown>
                     </span>

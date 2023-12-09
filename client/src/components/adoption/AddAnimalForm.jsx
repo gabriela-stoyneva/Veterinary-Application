@@ -19,8 +19,8 @@ export default function AddAnimalForm() {
             [AddAnimalFormKeys.AnimalType]: '',
             [AddAnimalFormKeys.AnimalImage]: '',
             [AddAnimalFormKeys.AnimalInfo]: '',
-
         });
+        
 
     return (
         <>
@@ -39,6 +39,7 @@ export default function AddAnimalForm() {
                             name={AddAnimalFormKeys.YourName}
                             value={values[AddAnimalFormKeys.YourName]}
                             onChange={onChange}
+                            required
                         />
                         <label htmlFor={AddAnimalFormKeys.YourEmail}>Your Email:</label>
                         <input
@@ -47,6 +48,7 @@ export default function AddAnimalForm() {
                             id={AddAnimalFormKeys.YourEmail}
                             value={values[AddAnimalFormKeys.YourEmail]}
                             onChange={onChange}
+                            required
                         />
                     </div>
 
@@ -58,6 +60,7 @@ export default function AddAnimalForm() {
                             id={AddAnimalFormKeys.PetName}
                             value={values[AddAnimalFormKeys.PetName]}
                             onChange={onChange}
+                            required
                         />
 
                         <label htmlFor={AddAnimalFormKeys.AssumedAge}>Assumed Age:</label>
@@ -67,6 +70,7 @@ export default function AddAnimalForm() {
                             id={AddAnimalFormKeys.AssumedAge}
                             value={values[AddAnimalFormKeys.AssumedAge]}
                             onChange={onChange}
+                            required
                         />
 
                         <label htmlFor={AddAnimalFormKeys.AnimalType}>Animal Type:</label>
@@ -76,6 +80,7 @@ export default function AddAnimalForm() {
                             id={AddAnimalFormKeys.AnimalType}
                             value={values[AddAnimalFormKeys.AnimalType]}
                             onChange={onChange}
+                            required
                         />
 
                         <label htmlFor={AddAnimalFormKeys.AnimalImage}>Animal Image:</label>
@@ -85,6 +90,7 @@ export default function AddAnimalForm() {
                             id={AddAnimalFormKeys.AnimalImage}
                             value={values[AddAnimalFormKeys.AnimalImage]}
                             onChange={onChange}
+                            required
                         />
 
                     </div>
@@ -99,6 +105,7 @@ export default function AddAnimalForm() {
                         rows="10"
                         value={values[AddAnimalFormKeys.AnimalInfo]}
                         onChange={onChange}
+                        required
                     >
                     </textarea>
                 </div>

@@ -4,7 +4,6 @@ const Path = {
     Login: "/login",
     Register: "/register",
     Logout: "/logout",
-    Appointment: "/appointment",
     ContactUs: "/contact-us",
     Questions: "/questions",
     Find: "/find",

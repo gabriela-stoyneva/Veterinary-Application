@@ -52,25 +52,10 @@ export const create = async ({
 };
 
 export const getOne = async (animalId) => {
-
   const result = await request.get(`${baseUrl}/${animalId}`);
 
   return result;
 };
-
-// export const getLatest = async () => {
-//     // const query = new URLSearchParams({
-//     //     sortBy: `_createdOn desc`,
-//     //     offset: 0,
-//     //     pageSize: 3,
-//     // });
-
-//     const query = encodeURIComponent(`offset=0&pageSize=3`);
-//     console.log(query);
-//     const result = await request.get(`${baseUrl}?sortBy=_createdOn%20desc&${query}`);
-
-//     return result;
-// }
 
 export const edit = async (animalId, animalData) => {
   const result = await request.put(`${baseUrl}/${animalId}`, animalData);
@@ -78,4 +63,28 @@ export const edit = async (animalId, animalData) => {
   return result;
 };
 
-export const remove = async (animalId) => request.remove(`${baseUrl}/${animalId}`);
+export const remove = async (animalId) =>
+  request.remove(`${baseUrl}/${animalId}`);
+
+//questions
+export const createQuestions = async ({
+  ownerName,
+  email,
+  petName,
+  age,
+  type,
+  breed,
+  question,
+}) => {
+  const result = await request.post(questionsUrl, {
+    ownerName,
+    email,
+    petName,
+    age,
+    type,
+    breed,
+    question,
+  });
+
+  return result;
+};
