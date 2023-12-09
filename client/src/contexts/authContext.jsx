@@ -15,27 +15,45 @@ export const AuthProvider = ({
     const [auth, setAuth] = usePersistedState('auth', {});
 
     const loginSubmitHandler = async (values) => {
-        const result = await authService.login(values.email, values.password);
+        try {
+            const result = await authService.login(values.email, values.password);
 
-        setAuth(result);
-        localStorage.setItem('accessToken', result.accessToken);
+            setAuth(result);
+            localStorage.setItem('accessToken', result.accessToken);
 
-        navigate(Path.Home);
+            navigate(Path.Home);
+
+        } catch (error) {
+            return error;
+        }
+
     };
 
     const registerSubmitHandler = async (values) => {
-        const result = await authService.register(values.email, values.password);
+        try {
+            const result = await authService.register(values.email, values.password);
 
-        setAuth(result);
+            setAuth(result);
 
-        localStorage.setItem('accessToken', result.accessToken);
+            localStorage.setItem('accessToken', result.accessToken);
 
-        navigate(Path.Home);
+            navigate(Path.Home);
+
+        } catch (error) {
+            return error;
+        }
+
     };
 
     const logoutHandler = () => {
         setAuth({});
-        localStorage.removeItem('accessToken');
+        try {
+            localStorage.removeItem('accessToken');
+            
+        } catch (error) {
+           return error; 
+        }
+        
     };
 
     const addItemHandler = async (data) => {
@@ -43,28 +61,19 @@ export const AuthProvider = ({
             const result = await adoptAnimalService.create(data)
 
         } catch (error) {
-           return error;
+            return error;
         }
 
         navigate(Path.Find);
 
     };
-    const editSubmitHandler = async (animalId, data) => {
-        try {
-            const result = await adoptAnimalService.edit(animalId, data)
 
-        } catch (error) {
-            return error;
-        }
-
-    }
 
     const values = {
         loginSubmitHandler,
         registerSubmitHandler,
         logoutHandler,
         addItemHandler,
-        editSubmitHandler,
         username: auth.username || auth.email,
         email: auth.email,
         userId: auth._id,

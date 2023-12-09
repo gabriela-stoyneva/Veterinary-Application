@@ -1,22 +1,20 @@
 import { useEffect, useState } from "react";
-
+import { Link } from "react-router-dom";
 
 
 import style from './PetList.module.css'
-import Path from "../../lib/paths";
-import { Link } from "react-router-dom";
-
 
 
 export default function PetList() {
 
     const [animals, setAnimals] = useState([]);
+    const [err, setError] = useState([]);
 
     useEffect(() => {
         fetch('http://localhost:3030/data/animals')
             .then((res) => res.json())
             .then((data) => setAnimals(Object.values(data)))
-            .catch((error) => console.log(error))
+            .catch((error) => setError(error.message))
 
     }, [])
 
@@ -27,6 +25,9 @@ export default function PetList() {
             <h2>
                 All we need is love!
             </h2>
+            {err && (
+                <p className={style.error}>{err}</p>
+            )}
             <div className={style.container}>
 
                 {animals.map((animal) => (
