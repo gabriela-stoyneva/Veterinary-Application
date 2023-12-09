@@ -60,15 +60,20 @@ export default function DetailsAdoption() {
 
     async function deleteButtonClickHandler() {
     
-
          const hasConfirmed = confirm(`Are you sure you want to delete ${animal.petName}`);
 
         if (hasConfirmed) {
-            await adoptAnimalService.remove(animalId);
-        }
 
-        navigate(Path.Find);
+            try {
 
+                await adoptAnimalService.remove(animalId);
+                navigate(Path.Find);
+
+            } catch (error) {
+                return error;
+            } 
+            
+        }  
     }
 
 
