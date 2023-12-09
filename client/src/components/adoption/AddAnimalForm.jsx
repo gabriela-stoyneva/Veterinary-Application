@@ -8,10 +8,8 @@ import useForm from '../../hooks/useForm';
 
 
 export default function AddAnimalForm() {
-    const [err, setError] = useState(null);
-
-    try {
-        const { addItemHandler } = useContext(AuthContext);
+    
+        const { addItemHandler, err } = useContext(AuthContext);
 
         const { values, onChange, onSubmit } = useForm(addItemHandler, {
             [AddAnimalFormKeys.YourName]: '',
@@ -23,13 +21,6 @@ export default function AddAnimalForm() {
             [AddAnimalFormKeys.AnimalInfo]: '',
 
         });
-
-    } catch (error) {
-        setError(error.message)
-    }
-
-
-
 
     return (
         <>
@@ -116,7 +107,7 @@ export default function AddAnimalForm() {
                 <div className={style.buttons}>
                     <button className={style.submitButton} type="submit">Add Animal</button>
                   {err && (
-                        <p className={style.error}>{err}</p>
+                        <p className={style.error}>{err.message}</p>
                   )}  
                 </div>
             </form >

@@ -30,6 +30,6 @@
     flex-direction: column;
 }
 
-.error p {
+.error {
     color: darkred;
 }

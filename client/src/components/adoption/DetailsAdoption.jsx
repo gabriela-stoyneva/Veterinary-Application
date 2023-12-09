@@ -19,7 +19,7 @@ export default function DetailsAdoption() {
 
     const navigate = useNavigate();
 
-    const { email, userId } = useContext(AuthContext);
+    const { email, userId, isAuthenticated } = useContext(AuthContext);
 
     const [animal, setAnimal] = useState({});
 
@@ -30,7 +30,7 @@ export default function DetailsAdoption() {
     useEffect(() => {
         adoptAnimalService.getOne(animalId)
             .then(setAnimal)
-            .catch(error => console.log(error));
+            .catch(error => setMessage(error.message));
 
         commentService.getAll(animalId)
             .then((result) => {
@@ -39,11 +39,10 @@ export default function DetailsAdoption() {
                     payload: result,
                 });
             })
-            .catch(error => console.log(error))
+            .catch(error => setMessage(error.message))
     }, [animalId]);
 
     const addCommentHandler = async (values) => {
-
 
         try {
             if (values.comment.length > 6) {
@@ -78,9 +77,6 @@ export default function DetailsAdoption() {
         comment: '',
     });
 
-
-
-
     async function deleteButtonClickHandler() {
 
         const hasConfirmed = confirm(`Are you sure you want to delete ${animal.petName}`);
@@ -97,8 +93,6 @@ export default function DetailsAdoption() {
 
         }
     }
-
-
 
     return (
 
@@ -153,7 +147,10 @@ export default function DetailsAdoption() {
                             rows='10'>
 
                         </textarea>
-                        <button type="submit">Add Comment</button>
+                        {!isAuthenticated && (
+                            <p>You need to login if you want comment! Login <Link to={Path.Login}><span className={style.here}>here!</span></Link></p>
+                        )}
+                        {isAuthenticated && (<button type="submit">Add Comment</button>)}
 
                         {message !== null && (
                             <div className={style.error}>
