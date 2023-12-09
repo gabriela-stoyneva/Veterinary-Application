@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { useContext, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import * as adoptAnimalService from '../../services/adoptAnimalService';
 import AddAnimalFormKeys from '../../lib/animalFormKeys';
@@ -40,9 +40,15 @@ export default function Edit() {
 
         const values = Object.fromEntries(new FormData(e.currentTarget));
 
-        const arrValidate = Object.fromEntries(new FormData(e.currentTarget));
+        const arrValidate = Object.values(values);
 
-        console.log(Object.values(arrValidate))
+        for (const currentValue of arrValidate) {
+            if (currentValue === '' || currentValue === ' ') {
+                setError('Fill all fields!');
+                // navigate(`/find/${animal._id}/edit`);
+                return
+            }
+        }
 
         try {
             await adoptAnimalService.edit(animalId, values);
@@ -50,7 +56,7 @@ export default function Edit() {
             navigate(`/find/${animal._id}`);
 
         } catch (err) {
-            setError(err)
+            setError(err.message)
         }
     }
 
@@ -153,7 +159,7 @@ export default function Edit() {
                 <div className={style.buttons}>
                     <button className={style.submitButton} type="submit">Edit Animal</button>
                     {err && (
-                        <p className={style.error}>You can't edit this item!</p>
+                        <p className={style.error}>{err}</p>
                     )}
                 </div>
             </form >
