@@ -23,6 +23,7 @@ import PetList from './components/adoption/PetList';
 import Logout from './components/clients/Logout';
 import DetailsAdoption from './components/adoption/DetailsAdoption';
 import Edit from './components/adoption/Edit';
+import RouteGuard from './lib/routeGuard';
 
 
 function App() {
@@ -49,10 +50,12 @@ function App() {
             <Route path={Path.Appointment} element={<Appointment />} />
 
             <Route path={Path.Find} element={<PetList />} />
-            <Route path={Path.Add} element={<AddAnimalForm />} />
-            <Route path={Path.Details} element={<DetailsAdoption /> } />
-            <Route path={Path.Edit} element={<Edit /> } />
-           
+            <Route path={Path.Details} element={<DetailsAdoption />} />
+
+            <Route element={<RouteGuard />} >
+              <Route path={Path.Add} element={<AddAnimalForm />} /> 
+              <Route path={Path.Edit} element={<Edit />} />
+            </Route>
 
           </Routes>
         </main>
