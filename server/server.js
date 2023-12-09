@@ -1490,66 +1490,53 @@
             }
         },
         animals: {
-            // "3987279d-0ad4-4afb-8ca9-5b256ae3b298": {
-    		// 	_ownerId: "35c62d76-8152-4626-8712-eeb96381bea8",
-    		// 	name: "Easy Lasagna",
-    		// 	img: "assets/lasagna.jpg",
-    		// 	ingredients: [
-    		// 		"1 tbsp Ingredient 1",
-    		// 		"2 cups Ingredient 2",
-    		// 		"500 g  Ingredient 3",
-    		// 		"25 g Ingredient 4"
-    		// 	],
-    		// 	steps: [
-    		// 		"Prepare ingredients",
-    		// 		"Mix ingredients",
-    		// 		"Cook until done"
-    		// 	],
-    		// 	_createdOn: 1613551279012
-    		// },
             "da456572-ae69-4bfd-9221-731d98ba1896": {
                 "petName": "Gary",
                 "assumedAge": "10",
                 "animalType": "cat",
-                "imageUrl": "https://plus.unsplash.com/premium_photo-1677101221533-52b45823a2dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D",
-                "story": "We found him on the street, he's lovely cat",
-                "publisherId": "1",
-                "publisherName": "Steven",
-                "publisherEmail": "steven11@gmail.com",
-                "_id": "da456572-ae69-4bfd-9221-731d98ba1896"
+                "animalImage": "https://plus.unsplash.com/premium_photo-1677101221533-52b45823a2dc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D",
+                "animalInfo": "We found him on the street, he's lovely cat",
+                "_ownerId": "1",
+                "yourName": "Steven",
+                "yourEmail": "steven11@gmail.com",
+                "_id": "da456572-ae69-4bfd-9221-731d98ba1896",
+                "_createdOn": "0001"
             },
             "3922a7a8-1380-4a0a-87c0-27a3ecc91630": {
                 "petName": "Merry",
                 "assumedAge": "6",
                 "animalType": "dog",
-                "imageUrl": "https://plus.unsplash.com/premium_photo-1677542200557-3c6856cc98b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nfGVufDB8fDB8fHww",
-                "story": "Nice and friendly dog!",
-                "publisherId": "2",
-                "publisherName": "Lilly",
-                "publisherEmail": "lillian21@gmail.com",
-                "_id": "3922a7a8-1380-4a0a-87c0-27a3ecc91630"
+                "animalImage": "https://plus.unsplash.com/premium_photo-1677542200557-3c6856cc98b1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZG9nfGVufDB8fDB8fHww",
+                "animalInfo": "Nice and friendly dog!",
+                "_ownerId": "2",
+                "yourName": "Lilly",
+                "yourEmail": "lillian21@gmail.com",
+                "_id": "3922a7a8-1380-4a0a-87c0-27a3ecc91630",
+                "_createdOn": "0002"
             },
             "49a2f857-4640-4d1b-b620-6450e390f174": {
                 "petName": "Roko",
                 "assumedAge": "1",
                 "animalType": "dog",
-                "imageUrl": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D",
-                "story": "He needs care and love!",
-                "publisherId": "3",
-                "publisherName": "Billy",
-                "publisherEmail": "billWillson@gmail.com",
-                "_id": "49a2f857-4640-4d1b-b620-6450e390f174"
+                "animalImage": "https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D",
+                "animalInfo": "He needs care and love!",
+                "_ownerId": "3",
+                "yourName": "Billy",
+                "yourEmail": "billWillson@gmail.com",
+                "_id": "49a2f857-4640-4d1b-b620-6450e390f174",
+                "_createdOn": "0003"
             },
             "b5432d83-d8d3-4987-ae9b-f7dd36f68e5f": {
                 "petName": "Maci",
                 "assumedAge": "3",
                 "animalType": "cat",
-                "imageUrl": "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
-                "story": "She's playfull and nice cat",
-                "publisherId": "4",
-                "publisherName": "Jhon",
-                "publisherEmail": "doeemailhere@gmail.com",
-                "_id": "b5432d83-d8d3-4987-ae9b-f7dd36f68e5f"
+                "animalImage": "https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGNhdHxlbnwwfHwwfHx8MA%3D%3D",
+                "animalInfo": "She's playfull and nice cat",
+                "_ownerId": "4",
+                "yourName": "Jhon",
+                "yourEmail": "doeemailhere@gmail.com",
+                "_id": "b5432d83-d8d3-4987-ae9b-f7dd36f68e5f",
+                "_createdOn": "0004"
             }
         
         },
