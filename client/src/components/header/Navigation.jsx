@@ -48,7 +48,7 @@ export default function Navigation() {
                                 CONTACT US
                             </Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item as={Link} to={Path.ContactUs}>CONTACT US</Dropdown.Item>
+                            <Dropdown.Item as={Link} to={Path.ContactUs}>CONTACT US</Dropdown.Item>
                                 <Dropdown.Item as={Link} to={Path.Questions}>COMMONLY ASKED QUESTIONS</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
