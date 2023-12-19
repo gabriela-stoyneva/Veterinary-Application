@@ -5,8 +5,6 @@ import * as adoptAnimalService from '../../services/adoptAnimalService';
 import style from './Doctors.module.css';
 
 
-
-
 export default function Doctors() {
 
     const [doctors, setDoctors] = useState([]);

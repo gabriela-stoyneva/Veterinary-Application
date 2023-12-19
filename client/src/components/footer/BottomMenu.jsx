@@ -29,7 +29,7 @@ export default function BottomMenu() {
             </article>
             <article className={style.bottomArticle}>
                 <h4> <Link to={Path.Services} >Services </Link></h4>
-                <h4> <Link to={Path.Appointment} >Appointment </Link></h4>
+                <h4> <Link to={Path.ContactUs} >Contact Us </Link></h4>
             </article>
 
             <div className={style.logoBottom}>
